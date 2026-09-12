@@ -343,3 +343,23 @@ button {
   .hero__actions { flex-direction: column; }
 
   .hero__actions .btn { width: 100%; }
+
+/* Added by feature/metrics-band */
+/* Va dentro del bloque @media (max-width: 767px) que ya existe en responsive.css,
+   en el hueco rotulado con el nombre de esta rama. */
+
+  .metrics__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    text-align: left;
+  }
+
+  .metric { padding-inline: 0; }
+
+  .metric + .metric {
+    border-left: 0;
+    border-top: 1px solid var(--color-outline);
+    padding-top: var(--space-6);
+  }
+
+  .metric--feature .metric__value { font-size: 32px; }
