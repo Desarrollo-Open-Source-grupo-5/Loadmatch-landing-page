@@ -66,7 +66,17 @@
      FAQ accordion
      Added by feature/faq-accordion
      ====================================================================== */
-  function initAccordion() {}
+  function initAccordion() {
+    document.querySelectorAll('.accordion__trigger').forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
+        var expanded = trigger.getAttribute('aria-expanded') === 'true';
+        var panel = document.getElementById(trigger.getAttribute('aria-controls'));
+
+        trigger.setAttribute('aria-expanded', String(!expanded));
+        if (panel) { panel.hidden = expanded; }
+      });
+    });
+  }
 
   /* ======================================================================
      Testimonials carousel

@@ -445,6 +445,59 @@
    Accordion
    Added by feature/faq-accordion
    -------------------------------------------------------------------------- */
+.accordion__item { border-bottom: 1px solid var(--color-outline); }
+
+.accordion__item:first-child { border-top: 1px solid var(--color-outline); }
+
+.accordion h3 { margin: 0; }
+
+.accordion__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  width: 100%;
+  min-height: 56px;
+  padding-block: var(--space-4);
+  text-align: left;
+  font-size: var(--text-h3);
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.accordion__icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.accordion__icon::before,
+.accordion__icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-body);
+}
+
+.accordion__icon::before {
+  top: 6px; left: 0;
+  width: 14px; height: 2px;
+}
+
+.accordion__icon::after {
+  top: 0; left: 6px;
+  width: 2px; height: 14px;
+  transition: opacity .15s ease-in-out;
+}
+
+.accordion__trigger[aria-expanded="true"] .accordion__icon::after { opacity: 0; }
+
+.accordion__panel {
+  padding-bottom: var(--space-4);
+  font-size: var(--text-sm);
+  max-width: 70ch;
+}
+
 
 
 /* --------------------------------------------------------------------------
