@@ -363,3 +363,20 @@ button {
   }
 
   .metric--feature .metric__value { font-size: 32px; }
+
+/* Va dentro del bloque @media (max-width: 1023px) que ya existe en responsive.css,
+en el hueco rotulado con el nombre de esta rama. */
+
+.pricing-grid { grid-template-columns: 1fr; }
+
+/* Va dentro del bloque @media (max-width: 767px) que ya existe en responsive.css,
+   en el hueco rotulado con el nombre de esta rama. */
+
+.final-cta__inner {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.final-cta__actions { flex-direction: column-reverse; }
+
+.final-cta__actions .btn { width: 100%; }
