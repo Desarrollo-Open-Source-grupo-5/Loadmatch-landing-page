@@ -1,4 +1,0 @@
-/* Va dentro del bloque @media (max-width: 1023px) que ya existe en responsive.css,
-   en el hueco rotulado con el nombre de esta rama. */
-
-  .pricing-grid { grid-template-columns: 1fr; }
