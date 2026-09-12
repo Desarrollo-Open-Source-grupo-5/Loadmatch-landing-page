@@ -1,0 +1,131 @@
+/* ==========================================================================
+   LoadMatch Landing Page — components.css
+   Buttons, header, hero, metrics, tabs, cards, carousel, accordion, footer.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Buttons
+   Primary uses navy text on orange (5.98:1). White on orange is 2.87:1 and
+   fails WCAG AA — it must never be used.
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: var(--space-2) var(--space-5, 20px);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: var(--shadow-1);
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.btn--lg {
+  min-height: 48px;
+  padding-inline: var(--space-6);
+  font-size: var(--text-body);
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  background-color: var(--color-primary-pressed);
+  color: #FFFFFF;              /* 6.46:1 on #A04100 */
+}
+
+.btn--secondary {
+  background-color: var(--color-surface);
+  color: var(--color-navy);
+  border: 1px solid var(--color-outline);
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+  background-color: var(--color-surface-alt);
+  border-color: var(--color-outline-strong);
+}
+
+/* --------------------------------------------------------------------------
+   Header
+   Added by feature/header-navigation
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Hero
+   Added by feature/hero-section
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Metrics
+   Added by feature/metrics-band
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Tabs
+   Added by feature/how-it-works-tabs
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Steps
+   Added by feature/how-it-works-tabs
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Trust cards
+   Added by feature/trust-cards
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Audience cards
+   Added by feature/audience-sections
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Testimonials & carousel
+   Added by feature/testimonials-carousel
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Pricing
+   Added by feature/pricing-plans
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Accordion
+   Added by feature/faq-accordion
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Videos
+   Added by feature/youtube-videos
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Final CTA
+   Added by feature/pricing-plans
+   -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+   Footer
+   Added by feature/site-footer
+   -------------------------------------------------------------------------- */
+
