@@ -16,7 +16,20 @@
      Calls to action → Web Application
      Added by feature/cta-app-links
      ====================================================================== */
-  function initAppLinks() {}
+   function initAppLinks() {
+    var config = window.LoadMatchConfig || {};
+    var base = (config.APP_BASE_URL || '').replace(/\/+$/, '');
+
+    document.querySelectorAll('[data-app-path]').forEach(function (link) {
+      if (base) {
+        link.setAttribute('href', base + link.getAttribute('data-app-path'));
+        link.removeAttribute('data-app-pending');
+      } else {
+        link.setAttribute('href', link.getAttribute('data-app-fallback') || '#top');
+        link.setAttribute('data-app-pending', 'true');
+      }
+    });
+  }
 
   /* ======================================================================
      Mobile navigation
