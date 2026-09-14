@@ -409,12 +409,100 @@
    Tabs
    Added by feature/how-it-works-tabs
    -------------------------------------------------------------------------- */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  border-bottom: 1px solid var(--color-outline);
+  margin-bottom: var(--space-10);
+}
 
+.tabs__tab {
+  min-height: 44px;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-body);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
 
+.tabs__tab.is-active {
+  color: var(--color-heading);
+  font-weight: 600;
+  border-bottom-color: var(--color-primary);
+}
 /* --------------------------------------------------------------------------
    Steps
    Added by feature/how-it-works-tabs
    -------------------------------------------------------------------------- */
+.steps__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  counter-reset: step;
+}
+
+.step { position: relative; }
+
+.step__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-bottom: var(--space-4);
+  border-radius: var(--radius-pill);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.step__media {
+  margin: 0 0 var(--space-4);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-1);
+}
+
+/* The step images are close-ups of one region of the application, not whole
+   screens: a full screen shown in a column this wide renders its interface
+   text at roughly 14% of its real size, which is unreadable. Every crop is
+   normalised to 3:2 here so the three cards line up. */
+.step__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--color-surface-alt);
+  border-bottom: 1px solid var(--color-outline);
+}
+
+.browser-bar i {
+  width: 7px;
+  height: 7px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-outline-strong);
+}
+
+.step__title {
+  font-size: var(--text-h3);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.step__desc { font-size: var(--text-sm); }
 
 
 /* --------------------------------------------------------------------------
