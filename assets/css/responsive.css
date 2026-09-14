@@ -372,6 +372,7 @@ button {
     gap: var(--space-4);
   }
   .video-grid { grid-template-columns: 1fr; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
 
 }
 
@@ -380,4 +381,5 @@ button {
     grid-template-columns: 1fr;
     gap: var(--space-6);
   }
+  .trust-grid { grid-template-columns: 1fr; }
 }

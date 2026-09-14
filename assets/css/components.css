@@ -509,6 +509,31 @@
    Trust cards
    Added by feature/trust-cards
    -------------------------------------------------------------------------- */
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.trust-card {
+  padding: var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-md);
+}
+
+.trust-card__icon {
+  color: var(--color-primary-pressed);
+  margin-bottom: var(--space-4);
+}
+
+.trust-card__title {
+  font-size: var(--text-h3);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.trust-card__desc { font-size: var(--text-sm); }
 
 
 /* --------------------------------------------------------------------------
