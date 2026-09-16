@@ -367,6 +367,9 @@ button {
   /* Added by feature/how-it-works-tabs */
 
 @media (max-width: 1023px) {
+  /* Added by feature/site-footer */
+  .site-footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
   .vehicles__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .steps__list {
     grid-template-columns: repeat(3, 1fr);
@@ -378,6 +381,10 @@ button {
 }
 
 @media (max-width: 767px) {
+  /* Added by feature/site-footer */
+  .site-footer { padding-block: var(--space-10) var(--space-6); }
+  .site-footer__grid { grid-template-columns: 1fr; gap: var(--space-6); }
+
   .vehicles__grid { grid-template-columns: 1fr; }
   .steps__list {
     grid-template-columns: 1fr;
