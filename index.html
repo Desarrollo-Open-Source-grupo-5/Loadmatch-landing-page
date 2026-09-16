@@ -183,6 +183,208 @@
     </section>
 
 
+        <!-- ========================== HOW IT WORKS ========================== -->
+    <section class="section" id="how-it-works">
+      <div class="container container--wide">
+        <h2 class="section__title" data-i18n="how.title">How it works</h2>
+
+        <div class="tabs" role="tablist" data-i18n-attr="aria-label" data-i18n="how.tablistLabel" aria-label="Select your profile">
+          <button class="tabs__tab is-active" role="tab" id="tab-companies"
+                  aria-selected="true" aria-controls="panel-companies"
+                  data-i18n="how.tabCompanies">For companies</button>
+          <button class="tabs__tab" role="tab" id="tab-carriers"
+                  aria-selected="false" aria-controls="panel-carriers" tabindex="-1"
+                  data-i18n="how.tabCarriers">For carriers</button>
+        </div>
+
+        <div class="steps" role="tabpanel" id="panel-companies" aria-labelledby="tab-companies" tabindex="0">
+          <ol class="steps__list">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-request-form.png" width="540" height="360" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.company1Alt"
+                     alt="Cargo request form in the LoadMatch application">
+              </figure>
+              <h3 class="step__title" data-i18n="how.company1Title">Publish your request</h3>
+              <p class="step__desc" data-i18n="how.company1Desc">Enter origin, destination, cargo, date and the vehicle type you need.</p>
+              <a class="btn btn--secondary vehicles__link" href="#vehicles" data-i18n="vehicles.link">View vehicle types</a>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-carrier-list.png" width="540" height="360" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.company2Alt"
+                     alt="List of carriers with ratings and quoted prices">
+              </figure>
+              <h3 class="step__title" data-i18n="how.company2Title">Compare carriers</h3>
+              <p class="step__desc" data-i18n="how.company2Desc">Review compatible carriers and their validated documentation.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-route-map.png" width="820" height="547"
+                     data-i18n-attr="alt" data-i18n="how.company3Alt"
+                     alt="Map tracking the vehicle on its way to the destination">
+              </figure>
+              <h3 class="step__title" data-i18n="how.company3Title">Confirm and track</h3>
+              <p class="step__desc" data-i18n="how.company3Desc">Confirm the service and follow the shipment status until delivery.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="steps" role="tabpanel" id="panel-carriers" aria-labelledby="tab-carriers" tabindex="0" hidden>
+          <ol class="steps__list">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-document-upload.png" width="1110" height="740" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.carrier1Alt"
+                     alt="Carrier document validation screen">
+              </figure>
+              <h3 class="step__title" data-i18n="how.carrier1Title">Create your profile and validate your documents</h3>
+              <p class="step__desc" data-i18n="how.carrier1Desc">Upload your MTC authorisation, SOAT insurance and technical inspection. We validate within 24 hours.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-request-inbox.png" width="1098" height="732" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.carrier2Alt"
+                     alt="Inbox of cargo requests compatible with the vehicle">
+              </figure>
+              <h3 class="step__title" data-i18n="how.carrier2Title">Receive requests that match your vehicle</h3>
+              <p class="step__desc" data-i18n="how.carrier2Desc">You only see loads that match your vehicle type and your operating area.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-payment-receipt.png" width="1084" height="723" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.carrier3Alt"
+                     alt="Settlement receipt for a completed service">
+              </figure>
+              <h3 class="step__title" data-i18n="how.carrier3Title">Quote, deliver and get paid</h3>
+              <p class="step__desc" data-i18n="how.carrier3Desc">Send your quote, confirm the service and get paid with a receipt, with no hidden middlemen.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== VEHICLE CATALOGUE ========================== -->
+    <section class="section section--alt" id="vehicles" aria-labelledby="vehicles-title" aria-describedby="vehicles-note">
+      <div class="container">
+        <h2 class="section__title" id="vehicles-title" data-i18n="vehicles.title">Vehicle types</h2>
+        <p class="section__lead" data-i18n="vehicles.lead">Compare cargo capacities to find an option for your shipment.</p>
+        <!-- English fallback mirrors assets/data/vehicles.mock.json. -->
+        <ul class="vehicles__grid">
+          <li class="trust-card">
+            <img class="vehicles__image" src="assets/img/cargo-van.jpg" width="554" height="554"
+                 loading="lazy" decoding="async" alt="Cargo van"
+                 data-i18n-attr="alt" data-i18n="vehicles.vanTitle">
+            <h3 class="trust-card__title" data-i18n="vehicles.vanTitle">Cargo van</h3>
+            <p class="vehicles__capacity" data-i18n="vehicles.vanCapacity">Up to 1 tonne</p>
+            <p class="trust-card__desc" data-i18n="vehicles.vanDesc">For parcels, boxes and small urban deliveries.</p>
+          </li>
+          <li class="trust-card">
+            <img class="vehicles__image" src="assets/img/light-truck.jpg" width="800" height="800"
+                 loading="lazy" decoding="async" alt="Light truck"
+                 data-i18n-attr="alt" data-i18n="vehicles.lightTitle">
+            <h3 class="trust-card__title" data-i18n="vehicles.lightTitle">Light truck</h3>
+            <p class="vehicles__capacity" data-i18n="vehicles.lightCapacity">Up to 3 tonnes</p>
+            <p class="trust-card__desc" data-i18n="vehicles.lightDesc">For store replenishment, furniture and medium-sized loads.</p>
+          </li>
+          <li class="trust-card">
+            <img class="vehicles__image" src="assets/img/medium-truck.jpg" width="516" height="387"
+                 loading="lazy" decoding="async" alt="Medium truck"
+                 data-i18n-attr="alt" data-i18n="vehicles.mediumTitle">
+            <h3 class="trust-card__title" data-i18n="vehicles.mediumTitle">Medium truck</h3>
+            <p class="vehicles__capacity" data-i18n="vehicles.mediumCapacity">Up to 5 tonnes</p>
+            <p class="trust-card__desc" data-i18n="vehicles.mediumDesc">For pallets and larger shipments of goods.</p>
+          </li>
+        </ul>
+        <p class="vehicles__note" id="vehicles-note" data-i18n="vehicles.note">Mock data: vehicle types and capacities are examples and do not represent a confirmed LoadMatch fleet.</p>
+      </div>
+    </section>
+
+        <!-- ============================== VIDEOS ============================== -->
+    <section class="section" id="videos">
+      <div class="container">
+        <h2 class="section__title" data-i18n="videos.title">Get to know LoadMatch</h2>
+        <div class="video-grid">
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/"
+                      data-i18n-attr="title" data-i18n="videos.productTitle"
+                      title="About the product: how LoadMatch works"
+                      loading="lazy" allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <figcaption class="video-card__caption" data-i18n="videos.productCaption">About the product — the business model and the main features of the platform.</figcaption>
+          </figure>
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/"
+                      data-i18n-attr="title" data-i18n="videos.teamTitle"
+                      title="About the team: who builds LoadMatch"
+                      loading="lazy" allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <figcaption class="video-card__caption" data-i18n="videos.teamCaption">About the team — the people behind LoadMatch and how we work.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+        <!-- ============================== TRUST ============================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title" data-i18n="trust.title">You know exactly who is moving your goods</h2>
+        <ul class="trust-grid">
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c1Title">Validated documentation</h3>
+            <p class="trust-card__desc" data-i18n="trust.c1Desc">We verify MTC authorisation, SOAT insurance and technical inspection.</p>
+          </li>
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="8" r="3.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M4.5 20a7.5 7.5 0 0 1 15 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c2Title">Driver and vehicle profile</h3>
+            <p class="trust-card__desc" data-i18n="trust.c2Desc">Name, photo, licence plate and vehicle type before you accept.</p>
+          </li>
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c3Title">Service and incident history</h3>
+            <p class="trust-card__desc" data-i18n="trust.c3Desc">Review the carrier's previous deliveries.</p>
+          </li>
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.7l5.9-.9L12 3.5Z"
+                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c4Title">Ratings from other companies</h3>
+            <p class="trust-card__desc" data-i18n="trust.c4Desc">Verified reviews from companies that already hired them.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
   </main>
 
   <!-- FOOTER      → feature/site-footer -->

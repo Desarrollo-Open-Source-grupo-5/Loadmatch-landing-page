@@ -1,0 +1,8 @@
+{
+  "vehicles": {
+    "link": "Ver tipos de vehículos",
+    "title": "Tipos de vehículos",
+    "lead": "Compara las capacidades de carga para encontrar una opción para tu envío.",
+    "note": "Mock data (datos de ejemplo): los tipos de vehículos y sus capacidades son ilustrativos y no representan una flota confirmada de LoadMatch."
+  }
+}

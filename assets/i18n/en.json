@@ -1,0 +1,8 @@
+{
+  "vehicles": {
+    "link": "View vehicle types",
+    "title": "Vehicle types",
+    "lead": "Compare cargo capacities to find an option for your shipment.",
+    "note": "Mock data: vehicle types and capacities are examples and do not represent a confirmed LoadMatch fleet."
+  }
+}
