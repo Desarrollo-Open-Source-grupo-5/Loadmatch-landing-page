@@ -122,7 +122,44 @@
      Testimonials carousel
      Added by feature/testimonials-carousel
      ====================================================================== */
-  function initCarousel() {}
+  function initCarousel() {
+    var carousel = document.querySelector('.carousel');
+    if (!carousel) { return; }
+    var section = carousel.closest('section');
+    var nav = section.querySelector('.carousel-nav');
+    var dots = Array.prototype.slice.call(section.querySelectorAll('[data-slide]'));
+    var slides = Array.prototype.slice.call(carousel.querySelectorAll('.testimonial'));
+    if (!nav || !slides.length || !dots.length) { return; }
+    nav.hidden = false;
+    var counter = section.querySelector('[data-carousel-counter]');
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function sync(index) {
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle('is-active', i === index);
+        dot.setAttribute('aria-current', i === index ? 'true' : 'false');
+      });
+      var label = (index + 1) + ' / ' + slides.length;
+      if (counter && counter.textContent !== label) { counter.textContent = label; }
+    }
+
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        var index = Number(dot.getAttribute('data-slide'));
+        var slide = slides[index];
+        if (!slide) { return; }
+        var bounds = carousel.getBoundingClientRect();
+        var target = slide.getBoundingClientRect();
+        carousel.scrollTo({
+          left: carousel.scrollLeft + target.left - bounds.left + target.width / 2 - carousel.clientWidth / 2,
+          behavior: reducedMotion.matches ? 'instant' : 'smooth'
+        });
+        sync(index);
+      });
+    });
+    sync(0);
+    // Scroll-position synchronization is added in the next increment.
+  }
 
   /* ====================================================================== */
   document.addEventListener('DOMContentLoaded', function () {

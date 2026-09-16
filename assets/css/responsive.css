@@ -378,6 +378,38 @@ button {
 }
 
 @media (max-width: 767px) {
+  /* Added by feature/testimonials-carousel */
+/* Va dentro del bloque @media (max-width: 767px) que ya existe en responsive.css,
+   en el hueco rotulado con el nombre de esta rama. */
+
+  .carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-inline: calc(var(--container-pad) * -1);
+    padding-inline: var(--container-pad);
+  }
+
+  .carousel::-webkit-scrollbar { display: none; }
+
+  .carousel__track {
+    display: flex;
+    gap: var(--space-3);
+  }
+
+  .testimonial {
+    flex: 0 0 calc(100% - 36px);   /* leaves ~20px of the next card visible */
+    scroll-snap-align: center;
+  }
+
+  .carousel-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+    margin-top: var(--space-3);
+  }
+
   .vehicles__grid { grid-template-columns: 1fr; }
   .steps__list {
     grid-template-columns: 1fr;
