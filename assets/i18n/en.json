@@ -4,5 +4,29 @@
     "title": "Vehicle types",
     "lead": "Compare cargo capacities to find an option for your shipment.",
     "note": "Mock data: vehicle types and capacities are examples and do not represent a confirmed LoadMatch fleet."
+  },
+  "footer": {
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "contact": "Contact",
+    "about": "About CargoLink Labs",
+    "blog": "Blog",
+    "careers": "Work with us",
+    "press": "Press",
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "accessibility": "Accessibility",
+    "city": "Lima, Peru",
+    "hours": "Mon to Fri, 9:00–18:00",
+    "sampleContact": "Sample contact details — not a verified support channel."
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "forCompanies": "For companies",
+    "forCarriers": "For carriers",
+    "pricing": "Pricing",
+    "faq": "FAQ"
   }
 }

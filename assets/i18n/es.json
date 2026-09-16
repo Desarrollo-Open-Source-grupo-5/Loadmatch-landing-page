@@ -4,5 +4,29 @@
     "title": "Tipos de vehículos",
     "lead": "Compara las capacidades de carga para encontrar una opción para tu envío.",
     "note": "Mock data (datos de ejemplo): los tipos de vehículos y sus capacidades son ilustrativos y no representan una flota confirmada de LoadMatch."
+  },
+  "footer": {
+    "product": "Producto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "contact": "Contacto",
+    "about": "Sobre CargoLink Labs",
+    "blog": "Blog",
+    "careers": "Trabaja con nosotros",
+    "press": "Prensa",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "cookies": "Política de cookies",
+    "accessibility": "Accesibilidad",
+    "city": "Lima, Perú",
+    "hours": "Lun a vie, 9:00–18:00",
+    "sampleContact": "Datos de contacto ilustrativos; no son un canal de soporte verificado."
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "forCompanies": "Para empresas",
+    "forCarriers": "Para transportistas",
+    "pricing": "Precios",
+    "faq": "Preguntas frecuentes"
   }
 }
