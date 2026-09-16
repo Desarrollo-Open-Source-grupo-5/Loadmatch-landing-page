@@ -535,39 +535,6 @@
 
 .trust-card__desc { font-size: var(--text-sm); }
 
-/* Vehicle catalogue: reuse the trust card surface and typography. */
-.vehicles__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-4);
-}
-
-.vehicles__image {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  object-position: center;
-  margin-bottom: var(--space-4);
-  border-radius: var(--radius-md);
-  background-color: var(--color-surface);
-}
-
-.vehicles__capacity {
-  margin-bottom: var(--space-2);
-  color: var(--color-heading);
-  font-weight: 600;
-}
-
-.vehicles__note {
-  margin-top: var(--space-6);
-  font-size: var(--text-sm);
-  text-align: center;
-}
-
-.vehicles__link { margin-top: var(--space-6); }
-
 
 /* --------------------------------------------------------------------------
    Audience cards
