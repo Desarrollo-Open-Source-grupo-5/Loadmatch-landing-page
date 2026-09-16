@@ -1,9 +1,82 @@
 {
-  "vehicles": {
-    "link": "Ver tipos de vehículos",
-    "title": "Tipos de vehículos",
-    "lead": "Compara las capacidades de carga para encontrar una opción para tu envío.",
-    "note": "Mock data (datos de ejemplo): los tipos de vehículos y sus capacidades son ilustrativos y no representan una flota confirmada de LoadMatch."
+  "meta": {
+    "title": "LoadMatch | Transporte de carga para empresas y transportistas",
+    "description": "Conecta empresas que necesitan transportar carga con transportistas y unidades disponibles mediante LoadMatch."
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido principal",
+    "openMenu": "Abrir menú de navegación",
+    "mainNav": "Navegación principal",
+    "langSwitch": "Seleccionar idioma",
+    "carousel": "carrusel",
+    "goToSlide1": "Ir al testimonio 1",
+    "goToSlide2": "Ir al testimonio 2",
+    "goToSlide3": "Ir al testimonio 3"
+  },
+  "nav": {
+    "howItWorks": "Cómo funciona",
+    "forCompanies": "Para empresas",
+    "forCarriers": "Para transportistas",
+    "pricing": "Precios",
+    "faq": "Preguntas frecuentes"
+  },
+  "cta": {
+    "signIn": "Iniciar sesión",
+    "shipCargo": "Necesito transportar carga",
+    "imCarrier": "Soy transportista"
+  },
+  "hero": {
+    "title": "Encuentra transporte de carga para tu mercadería, sin flota propia",
+    "lead": "Conectamos empresas con transportistas verificados en Lima Metropolitana. Publica tu solicitud y compara opciones en minutos.",
+    "imageAlt": "Operario cargando cajas en un camión de reparto en un almacén de Lima"
+  },
+  "metrics": {
+    "sectionLabel": "Indicadores del mercado",
+    "waitLabel": "Espera promedio",
+    "waitValue": "~12 horas",
+    "waitDesc": "Tiempo promedio para conseguir un vehículo antes del traslado",
+    "outsourcingLabel": "Tercerización",
+    "outsourcingValue": "71,1 %",
+    "outsourcingDesc": "Del transporte de carga y distribución es tercerizado",
+    "costLabel": "Costo logístico",
+    "costValue": "21,1 %",
+    "costDesc": "De las ventas de una microempresa se va en costos logísticos",
+    "source": "Fuente: MTC, 2023"
+  },
+  "how": {
+    "title": "Cómo funciona",
+    "tablistLabel": "Selecciona tu perfil",
+    "tabCompanies": "Para empresas",
+    "tabCarriers": "Para transportistas",
+    "company1Title": "Publica tu solicitud",
+    "company1Desc": "Indica origen, destino, carga, fecha y tipo de vehículo que necesitas.",
+    "company1Alt": "Formulario de solicitud de carga en la aplicación LoadMatch",
+    "company2Title": "Compara transportistas",
+    "company2Desc": "Revisa transportistas compatibles y su documentación validada.",
+    "company2Alt": "Lista de transportistas con calificaciones y precios cotizados",
+    "company3Title": "Confirma y sigue",
+    "company3Desc": "Confirma el servicio y sigue el estado del traslado hasta la entrega.",
+    "company3Alt": "Seguimiento en mapa del vehículo en ruta hacia el destino",
+    "carrier1Title": "Crea tu perfil y valida tus documentos",
+    "carrier1Desc": "Sube tu habilitación MTC, SOAT y revisión técnica. Validamos en 24 h.",
+    "carrier1Alt": "Pantalla de validación de documentos del transportista",
+    "carrier2Title": "Recibe solicitudes compatibles con tu vehículo",
+    "carrier2Desc": "Solo ves cargas que coinciden con tu tipo de vehículo y tu zona.",
+    "carrier2Alt": "Bandeja de solicitudes de carga compatibles con el vehículo",
+    "carrier3Title": "Cotiza, transporta y cobra",
+    "carrier3Desc": "Envía tu propuesta, confirma el servicio y cobra con comprobante, sin intermediarios.",
+    "carrier3Alt": "Comprobante de liquidación del servicio completado"
+  },
+  "trust": {
+    "title": "Sabes quién transporta tu mercadería",
+    "c1Title": "Documentación validada",
+    "c1Desc": "Verificamos habilitación del MTC, SOAT y revisión técnica.",
+    "c2Title": "Perfil del conductor y del vehículo",
+    "c2Desc": "Nombre, foto, placa y tipo de vehículo antes de aceptar.",
+    "c3Title": "Historial de servicios e incidencias",
+    "c3Desc": "Revisa entregas previas del transportista.",
+    "c4Title": "Calificaciones de otras empresas",
+    "c4Desc": "Reseñas verificadas de empresas que ya lo contrataron."
   },
   "audience": {
     "companiesTitle": "Para tu empresa",
@@ -17,9 +90,71 @@
     "carriers3": "Construye reputación con calificaciones",
     "carriers4": "Cobra con comprobante y sin intermediarios ocultos"
   },
-  "cta": {
-    "signIn": "Iniciar sesión",
-    "shipCargo": "Necesito transportar carga",
-    "imCarrier": "Soy transportista"
+  "testimonials": {
+    "eyebrow": "Contenido de ejemplo",
+    "title": "Lo que dicen nuestros usuarios",
+    "q1": "«Antes tardaba dos días en conseguir un camión, ahora consigo cotizaciones el mismo día.»",
+    "r1": "Jefa de Almacén · Distribuidora San Marcos S.A.C.",
+    "q2": "«Mi camión ya no está parado los fines de semana, siempre hay solicitudes de Ate a Lurín.»",
+    "r2": "Transportista independiente · Villa El Salvador",
+    "q3": "«Poder ver la documentación del transportista antes me da tranquilidad para enviar mercadería cara.»",
+    "r3": "Administradora · Comercial Andina E.I.R.L."
+  },
+  "pricing": {
+    "eyebrow": "Contenido de ejemplo",
+    "title": "Precios transparentes",
+    "lead": "Sin letras chicas ni sorpresas. Un modelo simple y directo.",
+    "p1Label": "Empresas",
+    "p1Title": "Publicar carga: gratis",
+    "p1Desc": "Publica todas tus solicitudes sin costo alguno ni comisiones iniciales.",
+    "p1Unit": "/ publicación",
+    "p2Label": "Por viaje",
+    "p2Badge": "Más utilizado",
+    "p2Title": "Comisión por servicio confirmado",
+    "p2Desc": "Solo pagas un pequeño porcentaje transparente cuando se completa el viaje.",
+    "p2Unit": "Tarifa transparente previa",
+    "p3Label": "Sin permanencia",
+    "p3Title": "Sin costo de membresía",
+    "p3Desc": "Sin mensualidades fijas ni cobros ocultos por mantenimiento de cuenta.",
+    "p3Unit": "/ mes"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Cuánto cuesta usar LoadMatch?",
+    "a1": "Publicar solicitudes es gratis para empresas. Cobramos una comisión sobre el precio del servicio confirmado, transparente antes de aceptar.",
+    "q2": "¿En qué zonas opera LoadMatch actualmente?",
+    "a2": "Actualmente operamos en Lima Metropolitana y Callao. Estamos ampliando gradualmente a otras regiones del Perú.",
+    "q3": "¿Cómo se valida a los transportistas?",
+    "a3": "Verificamos la habilitación del MTC, el SOAT vigente, la revisión técnica y la licencia de conducir contra registros oficiales antes de que un transportista pueda cotizar.",
+    "q4": "¿Qué hago si hay una incidencia durante el traslado?",
+    "a4": "Puedes reportar la incidencia desde la aplicación. Nuestro equipo de soporte hace seguimiento del caso y lo registra en el historial del transportista.",
+    "q5": "¿Qué tipos de carga puedo transportar?",
+    "a5": "Mercadería general envasada, carga paletizada y productos secos. Aún no admitimos carga peligrosa, perecible ni sobredimensionada."
+  },
+  "videos": {
+    "title": "Conoce LoadMatch",
+    "productTitle": "Sobre el producto: cómo funciona LoadMatch",
+    "productCaption": "Sobre el producto — el modelo de negocio y las principales características de la plataforma.",
+    "teamTitle": "Sobre el equipo: quiénes construyen LoadMatch",
+    "teamCaption": "Sobre el equipo — las personas detrás de LoadMatch y cómo trabajamos."
+  },
+  "finalCta": {
+    "title": "Empieza hoy con LoadMatch"
+  },
+  "footer": {
+    "product": "Producto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "contact": "Contacto",
+    "about": "Sobre CargoLink Labs",
+    "blog": "Blog",
+    "careers": "Trabaja con nosotros",
+    "press": "Prensa",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "cookies": "Política de cookies",
+    "accessibility": "Accesibilidad",
+    "city": "Lima, Perú",
+    "hours": "Lun a vie, 9:00–18:00"
   }
 }

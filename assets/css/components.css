@@ -54,10 +54,6 @@
 
 /* --------------------------------------------------------------------------
    Header
-   Added by feature/header-navigation
-   -------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------
-   Header
    -------------------------------------------------------------------------- */
 .site-header {
   position: sticky;
@@ -178,134 +174,6 @@
   background-color: var(--color-heading);
 }
 
-/* --------------------------------------------------------------------------
-   Header
-   -------------------------------------------------------------------------- */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background-color: var(--color-surface);
-  border-bottom: 1px solid var(--color-outline);
-  box-shadow: var(--shadow-2);
-}
-
-/* The header is wider than the content container, as in the approved mock-up:
-   the brand sits near the left edge and the primary CTA near the right one.
-   It needs the extra room because the Spanish labels are noticeably longer
-   than the English ones. */
-.site-header__inner {
-  display: flex;
-  align-items: center;
-  gap: var(--space-6);
-  min-height: var(--header-height);
-  max-width: 1400px;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  flex-shrink: 0;
-}
-
-.brand__mark {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-md);
-}
-
-.brand__name {
-  font-weight: 700;
-  font-size: var(--text-body);
-  color: var(--color-heading);
-  letter-spacing: -.01em;
-}
-
-.primary-nav {
-  display: flex;
-  align-items: center;
-  gap: var(--space-6);
-  flex: 1;
-}
-
-.primary-nav__list {
-  display: flex;
-  align-items: center;
-  gap: var(--space-6);
-  flex-shrink: 0;
-}
-
-.primary-nav__list a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 40px;
-  font-size: var(--text-sm);
-  color: var(--color-body);
-  white-space: nowrap;   /* Spanish labels are longer than English; never wrap */
-}
-
-.primary-nav__list a:hover { color: var(--color-heading); }
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  margin-left: auto;
-  flex-shrink: 0;
-}
-
-/* Language switch */
-.lang-switch {
-  display: inline-flex;
-  border: 1px solid var(--color-outline);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  flex-shrink: 0;   /* without this the flex row squeezes it and clips the ES half */
-}
-
-.lang-switch__btn {
-  flex: 0 0 44px;
-  min-width: 44px;
-  min-height: 40px;
-  padding-inline: var(--space-2);
-  font-size: var(--text-xs);
-  font-weight: 600;
-  color: var(--color-body);
-  background-color: var(--color-surface);
-}
-
-.lang-switch__btn.is-active {
-  background-color: var(--color-navy);
-  color: var(--color-on-navy);
-}
-
-/* Mobile menu toggle — hidden on desktop */
-.menu-toggle {
-  display: none;
-  width: 44px;
-  height: 44px;
-  margin-left: auto;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  border-radius: var(--radius-md);
-}
-
-.menu-toggle__bar {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: var(--color-heading);
-}
-
-
-
-/* --------------------------------------------------------------------------
-   Hero
-   Added by feature/hero-section
-   -------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------
    Hero
    -------------------------------------------------------------------------- */
@@ -347,12 +215,6 @@
   border: 1px solid var(--color-outline);
 }
 
-
-
-/* --------------------------------------------------------------------------
-   Metrics
-   Added by feature/metrics-band
-   -------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------
    Metrics
    -------------------------------------------------------------------------- */
@@ -403,11 +265,8 @@
   color: var(--color-body);
 }
 
-
-
 /* --------------------------------------------------------------------------
    Tabs
-   Added by feature/how-it-works-tabs
    -------------------------------------------------------------------------- */
 .tabs {
   display: flex;
@@ -432,9 +291,9 @@
   font-weight: 600;
   border-bottom-color: var(--color-primary);
 }
+
 /* --------------------------------------------------------------------------
    Steps
-   Added by feature/how-it-works-tabs
    -------------------------------------------------------------------------- */
 .steps__list {
   display: grid;
@@ -504,10 +363,8 @@
 
 .step__desc { font-size: var(--text-sm); }
 
-
 /* --------------------------------------------------------------------------
    Trust cards
-   Added by feature/trust-cards
    -------------------------------------------------------------------------- */
 .trust-grid {
   display: grid;
@@ -535,44 +392,6 @@
 
 .trust-card__desc { font-size: var(--text-sm); }
 
-/* Vehicle catalogue: reuse the trust card surface and typography. */
-.vehicles__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-4);
-}
-
-.vehicles__image {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  object-position: center;
-  margin-bottom: var(--space-4);
-  border-radius: var(--radius-md);
-  background-color: var(--color-surface);
-}
-
-.vehicles__capacity {
-  margin-bottom: var(--space-2);
-  color: var(--color-heading);
-  font-weight: 600;
-}
-
-.vehicles__note {
-  margin-top: var(--space-6);
-  font-size: var(--text-sm);
-  text-align: center;
-}
-
-.vehicles__link { margin-top: var(--space-6); }
-
-
-/* --------------------------------------------------------------------------
-   Audience cards
-   Added by feature/audience-sections
-   -------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------
    Audience cards
    -------------------------------------------------------------------------- */
@@ -616,30 +435,228 @@
   transform: rotate(-45deg);
 }
 
-.audience-card { min-width: 0; }
-.audience-card .btn { white-space: normal; }
-
 /* --------------------------------------------------------------------------
    Testimonials & carousel
-   Added by feature/testimonials-carousel
    -------------------------------------------------------------------------- */
+.carousel { overflow: visible; }
 
+.carousel__track {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-md);
+}
+
+.testimonial__quote {
+  margin: 0 0 var(--space-6);
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: var(--color-body);
+}
+
+.testimonial__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-outline);
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-surface-alt);
+  border: 1px solid var(--color-outline);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.testimonial__name {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-heading);
+}
+
+.testimonial__role {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-body);
+}
+
+.carousel-nav { display: none; }
+
+.carousel-nav__dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-pill);
+}
+
+.dot span {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-outline-strong);
+}
+
+.dot.is-active span { background-color: var(--color-primary); }
+
+.carousel-nav__counter {
+  text-align: center;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-body);
+}
 
 /* --------------------------------------------------------------------------
    Pricing
-   Added by feature/pricing-plans
    -------------------------------------------------------------------------- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+}
 
+.price-card {
+  position: relative;
+  padding: var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-md);
+}
+
+.price-card--featured {
+  border: 2px solid var(--color-navy);
+  box-shadow: var(--shadow-3);
+}
+
+.price-card__label {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--color-body);
+  margin-bottom: var(--space-3);
+}
+
+.badge {
+  position: absolute;
+  top: var(--space-6);
+  right: var(--space-6);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background-color: var(--color-navy);
+  color: var(--color-on-navy);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+.price-card__title {
+  font-size: var(--text-h3);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.price-card__desc {
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-6);
+}
+
+.price-card__amount {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-outline);
+  font-size: var(--text-sm);
+  color: var(--color-body);
+}
+
+.price-card__amount strong {
+  font-size: 22px;
+  color: var(--color-heading);
+}
 
 /* --------------------------------------------------------------------------
    Accordion
-   Added by feature/faq-accordion
    -------------------------------------------------------------------------- */
+.accordion__item { border-bottom: 1px solid var(--color-outline); }
 
+.accordion__item:first-child { border-top: 1px solid var(--color-outline); }
+
+.accordion h3 { margin: 0; }
+
+.accordion__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  width: 100%;
+  min-height: 56px;
+  padding-block: var(--space-4);
+  text-align: left;
+  font-size: var(--text-h3);
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.accordion__icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.accordion__icon::before,
+.accordion__icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-body);
+}
+
+.accordion__icon::before {
+  top: 6px; left: 0;
+  width: 14px; height: 2px;
+}
+
+.accordion__icon::after {
+  top: 0; left: 6px;
+  width: 2px; height: 14px;
+  transition: opacity .15s ease-in-out;
+}
+
+.accordion__trigger[aria-expanded="true"] .accordion__icon::after { opacity: 0; }
+
+.accordion__panel {
+  padding-bottom: var(--space-4);
+  font-size: var(--text-sm);
+  max-width: 70ch;
+}
 
 /* --------------------------------------------------------------------------
    Videos
-   Added by feature/youtube-videos
    -------------------------------------------------------------------------- */
 .video-grid {
   display: grid;
@@ -671,15 +688,93 @@
   font-size: var(--text-sm);
 }
 
-
 /* --------------------------------------------------------------------------
    Final CTA
-   Added by feature/pricing-plans
    -------------------------------------------------------------------------- */
+.final-cta {
+  background-color: var(--color-surface-alt);
+  border-top: 1px solid var(--color-outline);
+  padding-block: var(--space-10);
+}
 
+.final-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.final-cta__title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.final-cta__actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
 
 /* --------------------------------------------------------------------------
    Footer
-   Added by feature/site-footer
    -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: var(--color-navy);
+  color: var(--color-on-navy);
+  padding-block: var(--space-16) var(--space-8);
+}
 
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+}
+
+.site-footer__heading {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-on-navy);
+  margin-bottom: var(--space-4);
+}
+
+.site-footer__col li { margin-bottom: var(--space-2); }
+
+.site-footer__col a,
+.site-footer__col li {
+  font-size: var(--text-sm);
+  color: var(--color-on-navy-muted);
+}
+
+.site-footer__col a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.site-footer__col a:hover {
+  color: var(--color-on-navy);
+  text-decoration: underline;
+}
+
+.site-footer__bottom {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-10);
+  padding-top: var(--space-6);
+  border-top: 1px solid rgba(255, 255, 255, .15);
+}
+
+.site-footer__mark {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+}
+
+.site-footer__legal {
+  font-size: var(--text-xs);
+  color: var(--color-on-navy-muted);
+}
