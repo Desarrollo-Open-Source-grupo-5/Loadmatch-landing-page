@@ -16,7 +16,20 @@
      Calls to action → Web Application
      Added by feature/cta-app-links
      ====================================================================== */
-  function initAppLinks() {}
+   function initAppLinks() {
+    var config = window.LoadMatchConfig || {};
+    var base = (config.APP_BASE_URL || '').replace(/\/+$/, '');
+
+    document.querySelectorAll('[data-app-path]').forEach(function (link) {
+      if (base) {
+        link.setAttribute('href', base + link.getAttribute('data-app-path'));
+        link.removeAttribute('data-app-pending');
+      } else {
+        link.setAttribute('href', link.getAttribute('data-app-fallback') || '#top');
+        link.setAttribute('data-app-pending', 'true');
+      }
+    });
+  }
 
   /* ======================================================================
      Mobile navigation
@@ -60,13 +73,60 @@
      Audience tabs
      Added by feature/how-it-works-tabs
      ====================================================================== */
-  function initTabs() {}
+  function initTabs() {
+    var tablist = document.querySelector('[role="tablist"]');
+    if (!tablist) { return; }
+
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    if (!tabs.length) { return; }
+
+    function select(tab) {
+      tabs.forEach(function (item) {
+        var isSelected = item === tab;
+        var panel = document.getElementById(item.getAttribute('aria-controls'));
+
+        item.setAttribute('aria-selected', String(isSelected));
+        item.setAttribute('tabindex', isSelected ? '0' : '-1');
+        item.classList.toggle('is-active', isSelected);
+
+        if (panel) { panel.hidden = !isSelected; }
+      });
+    }
+
+    tabs.forEach(function (tab, index) {
+      tab.addEventListener('click', function () { select(tab); });
+
+      tab.addEventListener('keydown', function (event) {
+        var next = null;
+        if (event.key === 'ArrowRight') { next = tabs[(index + 1) % tabs.length]; }
+        if (event.key === 'ArrowLeft')  { next = tabs[(index - 1 + tabs.length) % tabs.length]; }
+        if (event.key === 'Home')       { next = tabs[0]; }
+        if (event.key === 'End')        { next = tabs[tabs.length - 1]; }
+
+        if (next) {
+          event.preventDefault();
+          select(next);
+          next.focus();
+        }
+      });
+    });
+  }
 
   /* ======================================================================
      FAQ accordion
      Added by feature/faq-accordion
      ====================================================================== */
-  function initAccordion() {}
+  function initAccordion() {
+    document.querySelectorAll('.accordion__trigger').forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
+        var expanded = trigger.getAttribute('aria-expanded') === 'true';
+        var panel = document.getElementById(trigger.getAttribute('aria-controls'));
+
+        trigger.setAttribute('aria-expanded', String(!expanded));
+        if (panel) { panel.hidden = expanded; }
+      });
+    });
+  }
 
   /* ======================================================================
      Testimonials carousel

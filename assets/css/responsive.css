@@ -363,3 +363,32 @@ button {
   }
 
   .metric--feature .metric__value { font-size: 32px; }
+
+  /* Added by feature/how-it-works-tabs */
+
+@media (max-width: 1023px) {
+  .steps__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+  .video-grid { grid-template-columns: 1fr; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  /* Added by feature/pricing-plans */
+  .pricing-grid { grid-template-columns: 1fr; }
+
+}
+
+@media (max-width: 767px) {
+  .steps__list {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  .trust-grid { grid-template-columns: 1fr; }
+  /* Added by feature/final-cta */
+  .final-cta__inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .final-cta__actions { flex-direction: column-reverse; }
+  .final-cta__actions .btn { width: 100%; }
+}
