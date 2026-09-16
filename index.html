@@ -66,45 +66,6 @@
     </div>
   </header>
 
-  <!-- ============================= HEADER ============================= -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-
-      <a class="brand" href="#top" aria-label="LoadMatch">
-        <img class="brand__mark" src="assets/img/loadmatch-logo.png" alt="" width="32" height="32">
-        <span class="brand__name">LoadMatch</span>
-      </a>
-
-      <button class="menu-toggle" type="button"
-              aria-expanded="false" aria-controls="primary-nav"
-              data-i18n-attr="aria-label" data-i18n="a11y.openMenu" aria-label="Open navigation menu">
-        <span class="menu-toggle__bar" aria-hidden="true"></span>
-        <span class="menu-toggle__bar" aria-hidden="true"></span>
-        <span class="menu-toggle__bar" aria-hidden="true"></span>
-      </button>
-
-      <nav class="primary-nav" id="primary-nav" data-i18n-attr="aria-label" data-i18n="a11y.mainNav" aria-label="Main navigation">
-        <ul class="primary-nav__list">
-          <li><a href="#how-it-works" data-i18n="nav.howItWorks">How it works</a></li>
-          <li><a href="#for-companies" data-i18n="nav.forCompanies">For companies</a></li>
-          <li><a href="#for-carriers" data-i18n="nav.forCarriers">For carriers</a></li>
-          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
-        </ul>
-
-        <div class="header-actions">
-          <div class="lang-switch" role="group" data-i18n-attr="aria-label" data-i18n="a11y.langSwitch" aria-label="Select language">
-            <button type="button" class="lang-switch__btn is-active" data-lang="en" aria-pressed="true">EN</button>
-            <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
-          </div>
-          <a class="btn btn--secondary" href="#" data-app-path="/login" data-app-fallback="#final-cta" data-i18n="cta.signIn">Sign in</a>
-          <a class="btn btn--primary" href="#" data-app-path="/signup?profile=company" data-app-fallback="#for-companies" data-i18n="cta.shipCargo">I need to ship cargo</a>
-        </div>
-      </nav>
-
-    </div>
-  </header>
-
   <!-- HERO        → feature/hero-section -->
 
   <main id="main-content">
@@ -127,7 +88,6 @@
       </div>
     </section>
 
-    <!-- Sections are added by their own feature branches -->
     <!-- ============================= METRICS ============================= -->
     <section class="metrics" data-i18n-attr="aria-label" data-i18n="metrics.sectionLabel" aria-label="Market indicators">
       <div class="container metrics__grid">
@@ -151,39 +111,8 @@
         </div>
       </div>
     </section>
-    <!-- ============================= PRICING ============================= -->
-    <section class="section" id="pricing">
-      <div class="container">
-        <p class="eyebrow eyebrow--center" data-i18n="pricing.eyebrow">Sample content</p>
-        <h2 class="section__title" data-i18n="pricing.title">Transparent pricing</h2>
-        <p class="section__lead" data-i18n="pricing.lead">No fine print, no surprises. A simple and direct model.</p>
 
-        <ul class="pricing-grid">
-          <li class="price-card">
-            <span class="price-card__label" data-i18n="pricing.p1Label">Companies</span>
-            <h3 class="price-card__title" data-i18n="pricing.p1Title">Publish cargo: free</h3>
-            <p class="price-card__desc" data-i18n="pricing.p1Desc">Publish all your requests at no cost and with no upfront commission.</p>
-            <p class="price-card__amount"><strong>S/&nbsp;0</strong> <span data-i18n="pricing.p1Unit">/ request</span></p>
-          </li>
-          <li class="price-card price-card--featured">
-            <span class="price-card__label" data-i18n="pricing.p2Label">Per trip</span>
-            <span class="badge" data-i18n="pricing.p2Badge">Most used</span>
-            <h3 class="price-card__title" data-i18n="pricing.p2Title">Commission on confirmed service</h3>
-            <p class="price-card__desc" data-i18n="pricing.p2Desc">You only pay a small transparent percentage once the trip is completed.</p>
-            <p class="price-card__amount"><span data-i18n="pricing.p2Unit">Rate shown before you accept</span></p>
-          </li>
-          <li class="price-card">
-            <span class="price-card__label" data-i18n="pricing.p3Label">No lock-in</span>
-            <h3 class="price-card__title" data-i18n="pricing.p3Title">No membership fee</h3>
-            <p class="price-card__desc" data-i18n="pricing.p3Desc">No fixed monthly fees and no hidden account maintenance charges.</p>
-            <p class="price-card__amount"><strong>S/&nbsp;0</strong> <span data-i18n="pricing.p3Unit">/ month</span></p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-        <!-- ========================== HOW IT WORKS ========================== -->
+    <!-- ========================== HOW IT WORKS ========================== -->
     <section class="section" id="how-it-works">
       <div class="container container--wide">
         <h2 class="section__title" data-i18n="how.title">How it works</h2>
@@ -275,36 +204,7 @@
       </div>
     </section>
 
-        <!-- ============================== VIDEOS ============================== -->
-    <section class="section" id="videos">
-      <div class="container">
-        <h2 class="section__title" data-i18n="videos.title">Get to know LoadMatch</h2>
-        <div class="video-grid">
-          <figure class="video-card">
-            <div class="video-card__frame">
-              <iframe src="https://www.youtube-nocookie.com/embed/"
-                      data-i18n-attr="title" data-i18n="videos.productTitle"
-                      title="About the product: how LoadMatch works"
-                      loading="lazy" allowfullscreen
-                      referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
-            <figcaption class="video-card__caption" data-i18n="videos.productCaption">About the product — the business model and the main features of the platform.</figcaption>
-          </figure>
-          <figure class="video-card">
-            <div class="video-card__frame">
-              <iframe src="https://www.youtube-nocookie.com/embed/"
-                      data-i18n-attr="title" data-i18n="videos.teamTitle"
-                      title="About the team: who builds LoadMatch"
-                      loading="lazy" allowfullscreen
-                      referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
-            <figcaption class="video-card__caption" data-i18n="videos.teamCaption">About the team — the people behind LoadMatch and how we work.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-        <!-- ============================== TRUST ============================== -->
+    <!-- ============================== TRUST ============================== -->
     <section class="section section--alt">
       <div class="container">
         <h2 class="section__title" data-i18n="trust.title">You know exactly who is moving your goods</h2>
@@ -340,6 +240,37 @@
             </svg>
             <h3 class="trust-card__title" data-i18n="trust.c4Title">Ratings from other companies</h3>
             <p class="trust-card__desc" data-i18n="trust.c4Desc">Verified reviews from companies that already hired them.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= PRICING ============================= -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <p class="eyebrow eyebrow--center" data-i18n="pricing.eyebrow">Sample content</p>
+        <h2 class="section__title" data-i18n="pricing.title">Transparent pricing</h2>
+        <p class="section__lead" data-i18n="pricing.lead">No fine print, no surprises. A simple and direct model.</p>
+
+        <ul class="pricing-grid">
+          <li class="price-card">
+            <span class="price-card__label" data-i18n="pricing.p1Label">Companies</span>
+            <h3 class="price-card__title" data-i18n="pricing.p1Title">Publish cargo: free</h3>
+            <p class="price-card__desc" data-i18n="pricing.p1Desc">Publish all your requests at no cost and with no upfront commission.</p>
+            <p class="price-card__amount"><strong>S/&nbsp;0</strong> <span data-i18n="pricing.p1Unit">/ request</span></p>
+          </li>
+          <li class="price-card price-card--featured">
+            <span class="price-card__label" data-i18n="pricing.p2Label">Per trip</span>
+            <span class="badge" data-i18n="pricing.p2Badge">Most used</span>
+            <h3 class="price-card__title" data-i18n="pricing.p2Title">Commission on confirmed service</h3>
+            <p class="price-card__desc" data-i18n="pricing.p2Desc">You only pay a small transparent percentage once the trip is completed.</p>
+            <p class="price-card__amount"><span data-i18n="pricing.p2Unit">Rate shown before you accept</span></p>
+          </li>
+          <li class="price-card">
+            <span class="price-card__label" data-i18n="pricing.p3Label">No lock-in</span>
+            <h3 class="price-card__title" data-i18n="pricing.p3Title">No membership fee</h3>
+            <p class="price-card__desc" data-i18n="pricing.p3Desc">No fixed monthly fees and no hidden account maintenance charges.</p>
+            <p class="price-card__amount"><strong>S/&nbsp;0</strong> <span data-i18n="pricing.p3Unit">/ month</span></p>
           </li>
         </ul>
       </div>
@@ -414,6 +345,36 @@
       </div>
     </section>
 
+    <!-- ============================== VIDEOS ============================== -->
+    <section class="section" id="videos">
+      <div class="container">
+        <h2 class="section__title" data-i18n="videos.title">Get to know LoadMatch</h2>
+        <div class="video-grid">
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/"
+                      data-i18n-attr="title" data-i18n="videos.productTitle"
+                      title="About the product: how LoadMatch works"
+                      loading="lazy" allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <figcaption class="video-card__caption" data-i18n="videos.productCaption">About the product — the business model and the main features of the platform.</figcaption>
+          </figure>
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/"
+                      data-i18n-attr="title" data-i18n="videos.teamTitle"
+                      title="About the team: who builds LoadMatch"
+                      loading="lazy" allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <figcaption class="video-card__caption" data-i18n="videos.teamCaption">About the team — the people behind LoadMatch and how we work.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ FINAL CTA ============================ -->
     <section class="final-cta" id="final-cta">
       <div class="container final-cta__inner">
         <h2 class="final-cta__title" data-i18n="finalCta.title">Start today with LoadMatch</h2>
