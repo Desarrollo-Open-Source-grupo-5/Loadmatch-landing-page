@@ -151,6 +151,268 @@
         </div>
       </div>
     </section>
+    <!-- ============================= PRICING ============================= -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <p class="eyebrow eyebrow--center" data-i18n="pricing.eyebrow">Sample content</p>
+        <h2 class="section__title" data-i18n="pricing.title">Transparent pricing</h2>
+        <p class="section__lead" data-i18n="pricing.lead">No fine print, no surprises. A simple and direct model.</p>
+
+        <ul class="pricing-grid">
+          <li class="price-card">
+            <span class="price-card__label" data-i18n="pricing.p1Label">Companies</span>
+            <h3 class="price-card__title" data-i18n="pricing.p1Title">Publish cargo: free</h3>
+            <p class="price-card__desc" data-i18n="pricing.p1Desc">Publish all your requests at no cost and with no upfront commission.</p>
+            <p class="price-card__amount"><strong>S/&nbsp;0</strong> <span data-i18n="pricing.p1Unit">/ request</span></p>
+          </li>
+          <li class="price-card price-card--featured">
+            <span class="price-card__label" data-i18n="pricing.p2Label">Per trip</span>
+            <span class="badge" data-i18n="pricing.p2Badge">Most used</span>
+            <h3 class="price-card__title" data-i18n="pricing.p2Title">Commission on confirmed service</h3>
+            <p class="price-card__desc" data-i18n="pricing.p2Desc">You only pay a small transparent percentage once the trip is completed.</p>
+            <p class="price-card__amount"><span data-i18n="pricing.p2Unit">Rate shown before you accept</span></p>
+          </li>
+          <li class="price-card">
+            <span class="price-card__label" data-i18n="pricing.p3Label">No lock-in</span>
+            <h3 class="price-card__title" data-i18n="pricing.p3Title">No membership fee</h3>
+            <p class="price-card__desc" data-i18n="pricing.p3Desc">No fixed monthly fees and no hidden account maintenance charges.</p>
+            <p class="price-card__amount"><strong>S/&nbsp;0</strong> <span data-i18n="pricing.p3Unit">/ month</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+        <!-- ========================== HOW IT WORKS ========================== -->
+    <section class="section" id="how-it-works">
+      <div class="container container--wide">
+        <h2 class="section__title" data-i18n="how.title">How it works</h2>
+
+        <div class="tabs" role="tablist" data-i18n-attr="aria-label" data-i18n="how.tablistLabel" aria-label="Select your profile">
+          <button class="tabs__tab is-active" role="tab" id="tab-companies"
+                  aria-selected="true" aria-controls="panel-companies"
+                  data-i18n="how.tabCompanies">For companies</button>
+          <button class="tabs__tab" role="tab" id="tab-carriers"
+                  aria-selected="false" aria-controls="panel-carriers" tabindex="-1"
+                  data-i18n="how.tabCarriers">For carriers</button>
+        </div>
+
+        <div class="steps" role="tabpanel" id="panel-companies" aria-labelledby="tab-companies" tabindex="0">
+          <ol class="steps__list">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-request-form.png" width="540" height="360" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.company1Alt"
+                     alt="Cargo request form in the LoadMatch application">
+              </figure>
+              <h3 class="step__title" data-i18n="how.company1Title">Publish your request</h3>
+              <p class="step__desc" data-i18n="how.company1Desc">Enter origin, destination, cargo, date and the vehicle type you need.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-carrier-list.png" width="540" height="360" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.company2Alt"
+                     alt="List of carriers with ratings and quoted prices">
+              </figure>
+              <h3 class="step__title" data-i18n="how.company2Title">Compare carriers</h3>
+              <p class="step__desc" data-i18n="how.company2Desc">Review compatible carriers and their validated documentation.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-route-map.png" width="820" height="547"
+                     data-i18n-attr="alt" data-i18n="how.company3Alt"
+                     alt="Map tracking the vehicle on its way to the destination">
+              </figure>
+              <h3 class="step__title" data-i18n="how.company3Title">Confirm and track</h3>
+              <p class="step__desc" data-i18n="how.company3Desc">Confirm the service and follow the shipment status until delivery.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="steps" role="tabpanel" id="panel-carriers" aria-labelledby="tab-carriers" tabindex="0" hidden>
+          <ol class="steps__list">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-document-upload.png" width="1110" height="740" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.carrier1Alt"
+                     alt="Carrier document validation screen">
+              </figure>
+              <h3 class="step__title" data-i18n="how.carrier1Title">Create your profile and validate your documents</h3>
+              <p class="step__desc" data-i18n="how.carrier1Desc">Upload your MTC authorisation, SOAT insurance and technical inspection. We validate within 24 hours.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-request-inbox.png" width="1098" height="732" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.carrier2Alt"
+                     alt="Inbox of cargo requests compatible with the vehicle">
+              </figure>
+              <h3 class="step__title" data-i18n="how.carrier2Title">Receive requests that match your vehicle</h3>
+              <p class="step__desc" data-i18n="how.carrier2Desc">You only see loads that match your vehicle type and your operating area.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-payment-receipt.png" width="1084" height="723" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.carrier3Alt"
+                     alt="Settlement receipt for a completed service">
+              </figure>
+              <h3 class="step__title" data-i18n="how.carrier3Title">Quote, deliver and get paid</h3>
+              <p class="step__desc" data-i18n="how.carrier3Desc">Send your quote, confirm the service and get paid with a receipt, with no hidden middlemen.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+        <!-- ============================== VIDEOS ============================== -->
+    <section class="section" id="videos">
+      <div class="container">
+        <h2 class="section__title" data-i18n="videos.title">Get to know LoadMatch</h2>
+        <div class="video-grid">
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/"
+                      data-i18n-attr="title" data-i18n="videos.productTitle"
+                      title="About the product: how LoadMatch works"
+                      loading="lazy" allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <figcaption class="video-card__caption" data-i18n="videos.productCaption">About the product — the business model and the main features of the platform.</figcaption>
+          </figure>
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/"
+                      data-i18n-attr="title" data-i18n="videos.teamTitle"
+                      title="About the team: who builds LoadMatch"
+                      loading="lazy" allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <figcaption class="video-card__caption" data-i18n="videos.teamCaption">About the team — the people behind LoadMatch and how we work.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+        <!-- ============================== TRUST ============================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title" data-i18n="trust.title">You know exactly who is moving your goods</h2>
+        <ul class="trust-grid">
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c1Title">Validated documentation</h3>
+            <p class="trust-card__desc" data-i18n="trust.c1Desc">We verify MTC authorisation, SOAT insurance and technical inspection.</p>
+          </li>
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="8" r="3.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M4.5 20a7.5 7.5 0 0 1 15 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c2Title">Driver and vehicle profile</h3>
+            <p class="trust-card__desc" data-i18n="trust.c2Desc">Name, photo, licence plate and vehicle type before you accept.</p>
+          </li>
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c3Title">Service and incident history</h3>
+            <p class="trust-card__desc" data-i18n="trust.c3Desc">Review the carrier's previous deliveries.</p>
+          </li>
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.7l5.9-.9L12 3.5Z"
+                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c4Title">Ratings from other companies</h3>
+            <p class="trust-card__desc" data-i18n="trust.c4Desc">Verified reviews from companies that already hired them.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =============================== FAQ =============================== -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <h2 class="section__title" data-i18n="faq.title">Frequently asked questions</h2>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="true" aria-controls="faq-1" id="faq-1-btn">
+                <span data-i18n="faq.q1">How much does LoadMatch cost?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn">
+              <p data-i18n="faq.a1">Publishing requests is free for companies. We charge a commission on the confirmed service price, shown transparently before you accept.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">
+                <span data-i18n="faq.q2">Which areas does LoadMatch currently operate in?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn" hidden>
+              <p data-i18n="faq.a2">We currently operate across Metropolitan Lima and Callao. We are gradually expanding to other regions of Peru.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">
+                <span data-i18n="faq.q3">How are carriers validated?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn" hidden>
+              <p data-i18n="faq.a3">We verify MTC authorisation, current SOAT insurance, technical inspection and driving licence against official records before a carrier can quote.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">
+                <span data-i18n="faq.q4">What happens if there is an incident during the shipment?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn" hidden>
+              <p data-i18n="faq.a4">You can report the incident from the application. Our support team follows up on the case and records it in the carrier's history.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">
+                <span data-i18n="faq.q5">What types of cargo can I ship?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn" hidden>
+              <p data-i18n="faq.a5">General packaged goods, palletised loads and dry merchandise. Hazardous, perishable and oversized cargo are not supported yet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="final-cta" id="final-cta">
       <div class="container final-cta__inner">
