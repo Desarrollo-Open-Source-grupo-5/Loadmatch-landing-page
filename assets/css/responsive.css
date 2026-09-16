@@ -367,7 +367,6 @@ button {
   /* Added by feature/how-it-works-tabs */
 
 @media (max-width: 1023px) {
-  .vehicles__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .steps__list {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-4);
@@ -378,7 +377,6 @@ button {
 }
 
 @media (max-width: 767px) {
-  .vehicles__grid { grid-template-columns: 1fr; }
   .steps__list {
     grid-template-columns: 1fr;
     gap: var(--space-6);
