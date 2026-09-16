@@ -158,7 +158,28 @@
       });
     });
     sync(0);
-    // Scroll-position synchronization is added in the next increment.
+    var ticking = false;
+    function syncFromPosition() {
+      var bounds = carousel.getBoundingClientRect();
+      var centre = bounds.left + carousel.clientWidth / 2;
+      var closest = 0;
+      var shortest = Infinity;
+      slides.forEach(function (slide, i) {
+        var rect = slide.getBoundingClientRect();
+        var distance = Math.abs(rect.left + rect.width / 2 - centre);
+        if (distance < shortest) { shortest = distance; closest = i; }
+      });
+      sync(closest);
+      ticking = false;
+    }
+    function scheduleSync() {
+      if (ticking) { return; }
+      ticking = true;
+      window.requestAnimationFrame(syncFromPosition);
+    }
+    carousel.addEventListener('scroll', scheduleSync, { passive: true });
+    window.addEventListener('resize', scheduleSync);
+    scheduleSync();
   }
 
   /* ====================================================================== */
