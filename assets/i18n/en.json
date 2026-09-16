@@ -4,5 +4,25 @@
     "title": "Vehicle types",
     "lead": "Compare cargo capacities to find an option for your shipment.",
     "note": "Mock data: vehicle types and capacities are examples and do not represent a confirmed LoadMatch fleet."
+  },
+  "testimonials": {
+    "eyebrow": "Sample content",
+    "title": "What our users say",
+    "q1": "«It used to take me two days to find a truck; now I get quotes the same day.»",
+    "r1": "Warehouse Manager · Distribuidora San Marcos S.A.C.",
+    "q2": "«My truck no longer sits idle on weekends; there are always requests from Ate to Lurín.»",
+    "r2": "Independent carrier · Villa El Salvador",
+    "q3": "«Being able to see the carrier's documents beforehand gives me peace of mind when shipping expensive goods.»",
+    "r3": "Administrator · Comercial Andina E.I.R.L."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open navigation menu",
+    "mainNav": "Main navigation",
+    "langSwitch": "Select language",
+    "carousel": "carousel",
+    "goToSlide1": "Go to testimonial 1",
+    "goToSlide2": "Go to testimonial 2",
+    "goToSlide3": "Go to testimonial 3"
   }
 }

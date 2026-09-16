@@ -4,5 +4,25 @@
     "title": "Tipos de vehículos",
     "lead": "Compara las capacidades de carga para encontrar una opción para tu envío.",
     "note": "Mock data (datos de ejemplo): los tipos de vehículos y sus capacidades son ilustrativos y no representan una flota confirmada de LoadMatch."
+  },
+  "testimonials": {
+    "eyebrow": "Contenido de ejemplo",
+    "title": "Lo que dicen nuestros usuarios",
+    "q1": "«Antes tardaba dos días en conseguir un camión, ahora consigo cotizaciones el mismo día.»",
+    "r1": "Jefa de Almacén · Distribuidora San Marcos S.A.C.",
+    "q2": "«Mi camión ya no está parado los fines de semana, siempre hay solicitudes de Ate a Lurín.»",
+    "r2": "Transportista independiente · Villa El Salvador",
+    "q3": "«Poder ver la documentación del transportista antes me da tranquilidad para enviar mercadería cara.»",
+    "r3": "Administradora · Comercial Andina E.I.R.L."
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido principal",
+    "openMenu": "Abrir menú de navegación",
+    "mainNav": "Navegación principal",
+    "langSwitch": "Seleccionar idioma",
+    "carousel": "carrusel",
+    "goToSlide1": "Ir al testimonio 1",
+    "goToSlide2": "Ir al testimonio 2",
+    "goToSlide3": "Ir al testimonio 3"
   }
 }
