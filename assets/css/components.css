@@ -677,7 +677,6 @@
 }
 
 
-
 /* --------------------------------------------------------------------------
    Videos
    Added by feature/youtube-videos
@@ -717,6 +716,31 @@
    Final CTA
    Added by feature/pricing-plans
    -------------------------------------------------------------------------- */
+.final-cta {
+  background-color: var(--color-surface-alt);
+  border-top: 1px solid var(--color-outline);
+  padding-block: var(--space-10);
+}
+
+.final-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.final-cta__title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.final-cta__actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
 
 
 /* --------------------------------------------------------------------------
