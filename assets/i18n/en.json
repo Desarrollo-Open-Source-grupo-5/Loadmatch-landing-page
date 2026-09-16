@@ -4,5 +4,22 @@
     "title": "Vehicle types",
     "lead": "Compare cargo capacities to find an option for your shipment.",
     "note": "Mock data: vehicle types and capacities are examples and do not represent a confirmed LoadMatch fleet."
+  },
+  "audience": {
+    "companiesTitle": "For your company",
+    "companies1": "Publish in 3 steps, without owning a fleet",
+    "companies2": "Compare options and prices in one place",
+    "companies3": "Real-time traceability of your shipment",
+    "companies4": "History and receipts for your accounting",
+    "carriersTitle": "For carriers",
+    "carriers1": "Receive requests that match your vehicle",
+    "carriers2": "Cut down the time your vehicle sits idle",
+    "carriers3": "Build reputation through ratings",
+    "carriers4": "Get paid with a receipt and no hidden middlemen"
+  },
+  "cta": {
+    "signIn": "Sign in",
+    "shipCargo": "I need to ship cargo",
+    "imCarrier": "I am a carrier"
   }
 }

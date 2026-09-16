@@ -4,5 +4,22 @@
     "title": "Tipos de vehículos",
     "lead": "Compara las capacidades de carga para encontrar una opción para tu envío.",
     "note": "Mock data (datos de ejemplo): los tipos de vehículos y sus capacidades son ilustrativos y no representan una flota confirmada de LoadMatch."
+  },
+  "audience": {
+    "companiesTitle": "Para tu empresa",
+    "companies1": "Publica en 3 pasos, sin flota propia",
+    "companies2": "Compara opciones y precios en un solo lugar",
+    "companies3": "Trazabilidad en tiempo real del envío",
+    "companies4": "Historial y comprobantes para tu contabilidad",
+    "carriersTitle": "Para transportistas",
+    "carriers1": "Recibe solicitudes compatibles con tu vehículo",
+    "carriers2": "Reduce el tiempo con el vehículo parado",
+    "carriers3": "Construye reputación con calificaciones",
+    "carriers4": "Cobra con comprobante y sin intermediarios ocultos"
+  },
+  "cta": {
+    "signIn": "Iniciar sesión",
+    "shipCargo": "Necesito transportar carga",
+    "imCarrier": "Soy transportista"
   }
 }
