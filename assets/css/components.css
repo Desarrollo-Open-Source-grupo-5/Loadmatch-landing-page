@@ -573,14 +573,51 @@
    Audience cards
    Added by feature/audience-sections
    -------------------------------------------------------------------------- */
-.audience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); margin-top: var(--space-10); }
-.audience-card { min-width: 0; padding: var(--space-8); background: var(--color-surface); border: 1px solid var(--color-outline); border-radius: var(--radius-md); }
-.audience-card h2 { font-size: var(--text-h2); margin-bottom: var(--space-4); }
-.audience-card ul { list-style: disc; padding-left: var(--space-6); margin-bottom: var(--space-6); }
-.audience-card li { margin-bottom: var(--space-3); }
+/* --------------------------------------------------------------------------
+   Audience cards
+   -------------------------------------------------------------------------- */
+.audience {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.audience-card {
+  padding: var(--space-8);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-md);
+}
+
+.audience-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+}
+
+.audience-card__list { margin-bottom: var(--space-8); }
+
+.audience-card__list li {
+  position: relative;
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.audience-card__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 12px;
+  height: 7px;
+  border-left: 2px solid var(--color-primary-pressed);
+  border-bottom: 2px solid var(--color-primary-pressed);
+  transform: rotate(-45deg);
+}
+
+.audience-card { min-width: 0; }
 .audience-card .btn { white-space: normal; }
-
-
 
 /* --------------------------------------------------------------------------
    Testimonials & carousel

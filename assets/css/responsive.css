@@ -379,7 +379,7 @@ button {
 
 @media (max-width: 767px) {
   /* Added by feature/audience-sections */
-  .audience-grid { grid-template-columns: 1fr; }
+  .audience { grid-template-columns: 1fr; }
   .audience-card { padding: var(--space-6); }
   .audience-card .btn { width: 100%; }
 

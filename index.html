@@ -349,32 +349,40 @@
           </li>
         </ul>
 
-        <!-- Audience blocks: feature/audience-sections -->
-        <div class="audience-grid">
-          <section class="audience-card" id="for-companies" aria-labelledby="audience-companies-title">
-            <h2 id="audience-companies-title" data-i18n="audience.companiesTitle">For your company</h2>
-            <ul>
-              <li data-i18n="audience.companies1">Publish in 3 steps, without owning a fleet</li>
-              <li data-i18n="audience.companies2">Compare options and prices in one place</li>
-              <li data-i18n="audience.companies3">Real-time traceability of your shipment</li>
-              <li data-i18n="audience.companies4">History and receipts for your accounting</li>
-            </ul>
-            <a class="btn btn--primary" href="#for-companies" data-app-path="/signup?profile=company" data-app-fallback="#for-companies" data-i18n="cta.shipCargo">I need to ship cargo</a>
-          </section>
-          <section class="audience-card" id="for-carriers" aria-labelledby="audience-carriers-title">
-            <h2 id="audience-carriers-title" data-i18n="audience.carriersTitle">For carriers</h2>
-            <ul>
-              <li data-i18n="audience.carriers1">Receive requests that match your vehicle</li>
-              <li data-i18n="audience.carriers2">Cut down the time your vehicle sits idle</li>
-              <li data-i18n="audience.carriers3">Build reputation through ratings</li>
-              <li data-i18n="audience.carriers4">Get paid with a receipt and no hidden middlemen</li>
-            </ul>
-            <a class="btn btn--secondary" href="#for-carriers" data-app-path="/signup?profile=carrier" data-app-fallback="#for-carriers" data-i18n="cta.imCarrier">I am a carrier</a>
-          </section>
-        </div>
+
 
       </div>
     </section>
+
+    <!-- ========================== AUDIENCE SPLIT ========================== -->
+    <section class="section">
+      <div class="container audience">
+
+        <article class="audience-card" id="for-companies">
+          <h2 class="audience-card__title" data-i18n="audience.companiesTitle">For your company</h2>
+          <ul class="audience-card__list">
+            <li data-i18n="audience.companies1">Publish in 3 steps, without owning a fleet</li>
+            <li data-i18n="audience.companies2">Compare options and prices in one place</li>
+            <li data-i18n="audience.companies3">Real-time traceability of your shipment</li>
+            <li data-i18n="audience.companies4">History and receipts for your accounting</li>
+          </ul>
+          <a class="btn btn--primary" href="#" data-app-path="/signup?profile=company" data-app-fallback="#for-companies" data-i18n="cta.shipCargo">I need to ship cargo</a>
+        </article>
+
+        <article class="audience-card" id="for-carriers">
+          <h2 class="audience-card__title" data-i18n="audience.carriersTitle">For carriers</h2>
+          <ul class="audience-card__list">
+            <li data-i18n="audience.carriers1">Receive requests that match your vehicle</li>
+            <li data-i18n="audience.carriers2">Cut down the time your vehicle sits idle</li>
+            <li data-i18n="audience.carriers3">Build reputation through ratings</li>
+            <li data-i18n="audience.carriers4">Get paid with a receipt and no hidden middlemen</li>
+          </ul>
+          <a class="btn btn--secondary" href="#" data-app-path="/signup?profile=carrier" data-app-fallback="#for-carriers" data-i18n="cta.imCarrier">I am a carrier</a>
+        </article>
+
+      </div>
+    </section>
+
 
 
 
