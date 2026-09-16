@@ -1,9 +1,145 @@
 {
-  "vehicles": {
-    "link": "View vehicle types",
-    "title": "Vehicle types",
-    "lead": "Compare cargo capacities to find an option for your shipment.",
-    "note": "Mock data: vehicle types and capacities are examples and do not represent a confirmed LoadMatch fleet."
+  "meta": {
+    "title": "LoadMatch | Freight transport for companies and carriers",
+    "description": "Connect companies that need to move cargo with verified carriers and available vehicles through LoadMatch."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open navigation menu",
+    "mainNav": "Main navigation",
+    "langSwitch": "Select language",
+    "carousel": "carousel",
+    "goToSlide1": "Go to testimonial 1",
+    "goToSlide2": "Go to testimonial 2",
+    "goToSlide3": "Go to testimonial 3"
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "forCompanies": "For companies",
+    "forCarriers": "For carriers",
+    "pricing": "Pricing",
+    "faq": "FAQ"
+  },
+  "cta": {
+    "signIn": "Sign in",
+    "shipCargo": "I need to ship cargo",
+    "imCarrier": "I am a carrier"
+  },
+  "hero": {
+    "title": "Find freight transport for your goods, without owning a fleet",
+    "lead": "We connect companies with verified carriers across Metropolitan Lima. Publish your request and compare options in minutes.",
+    "imageAlt": "Worker loading boxes into a delivery truck at a warehouse in Lima"
+  },
+  "metrics": {
+    "sectionLabel": "Market indicators",
+    "waitLabel": "Average wait",
+    "waitValue": "~12 hours",
+    "waitDesc": "Average time to secure a vehicle before a shipment",
+    "outsourcingLabel": "Outsourcing",
+    "outsourcingValue": "71.1 %",
+    "outsourcingDesc": "Of freight transport and distribution is outsourced",
+    "costLabel": "Logistics cost",
+    "costValue": "21.1 %",
+    "costDesc": "Of a micro-business's sales goes to logistics costs",
+    "source": "Source: MTC, 2023"
+  },
+  "how": {
+    "title": "How it works",
+    "tablistLabel": "Select your profile",
+    "tabCompanies": "For companies",
+    "tabCarriers": "For carriers",
+    "company1Title": "Publish your request",
+    "company1Desc": "Enter origin, destination, cargo, date and the vehicle type you need.",
+    "company1Alt": "Cargo request form in the LoadMatch application",
+    "company2Title": "Compare carriers",
+    "company2Desc": "Review compatible carriers and their validated documentation.",
+    "company2Alt": "List of carriers with ratings and quoted prices",
+    "company3Title": "Confirm and track",
+    "company3Desc": "Confirm the service and follow the shipment status until delivery.",
+    "company3Alt": "Map tracking the vehicle on its way to the destination",
+    "carrier1Title": "Create your profile and validate your documents",
+    "carrier1Desc": "Upload your MTC authorisation, SOAT insurance and technical inspection. We validate within 24 hours.",
+    "carrier1Alt": "Carrier document validation screen",
+    "carrier2Title": "Receive requests that match your vehicle",
+    "carrier2Desc": "You only see loads that match your vehicle type and your operating area.",
+    "carrier2Alt": "Inbox of cargo requests compatible with the vehicle",
+    "carrier3Title": "Quote, deliver and get paid",
+    "carrier3Desc": "Send your quote, confirm the service and get paid with a receipt, with no hidden middlemen.",
+    "carrier3Alt": "Settlement receipt for a completed service"
+  },
+  "trust": {
+    "title": "You know exactly who is moving your goods",
+    "c1Title": "Validated documentation",
+    "c1Desc": "We verify MTC authorisation, SOAT insurance and technical inspection.",
+    "c2Title": "Driver and vehicle profile",
+    "c2Desc": "Name, photo, licence plate and vehicle type before you accept.",
+    "c3Title": "Service and incident history",
+    "c3Desc": "Review the carrier's previous deliveries.",
+    "c4Title": "Ratings from other companies",
+    "c4Desc": "Verified reviews from companies that already hired them."
+  },
+  "audience": {
+    "companiesTitle": "For your company",
+    "companies1": "Publish in 3 steps, without owning a fleet",
+    "companies2": "Compare options and prices in one place",
+    "companies3": "Real-time traceability of your shipment",
+    "companies4": "History and receipts for your accounting",
+    "carriersTitle": "For carriers",
+    "carriers1": "Receive requests that match your vehicle",
+    "carriers2": "Cut down the time your vehicle sits idle",
+    "carriers3": "Build reputation through ratings",
+    "carriers4": "Get paid with a receipt and no hidden middlemen"
+  },
+  "testimonials": {
+    "eyebrow": "Sample content",
+    "title": "What our users say",
+    "q1": "«It used to take me two days to find a truck; now I get quotes the same day.»",
+    "r1": "Warehouse Manager · Distribuidora San Marcos S.A.C.",
+    "q2": "«My truck no longer sits idle on weekends; there are always requests from Ate to Lurín.»",
+    "r2": "Independent carrier · Villa El Salvador",
+    "q3": "«Being able to see the carrier's documents beforehand gives me peace of mind when shipping expensive goods.»",
+    "r3": "Administrator · Comercial Andina E.I.R.L."
+  },
+  "pricing": {
+    "eyebrow": "Sample content",
+    "title": "Transparent pricing",
+    "lead": "No fine print, no surprises. A simple and direct model.",
+    "p1Label": "Companies",
+    "p1Title": "Publish cargo: free",
+    "p1Desc": "Publish all your requests at no cost and with no upfront commission.",
+    "p1Unit": "/ request",
+    "p2Label": "Per trip",
+    "p2Badge": "Most used",
+    "p2Title": "Commission on confirmed service",
+    "p2Desc": "You only pay a small transparent percentage once the trip is completed.",
+    "p2Unit": "Rate shown before you accept",
+    "p3Label": "No lock-in",
+    "p3Title": "No membership fee",
+    "p3Desc": "No fixed monthly fees and no hidden account maintenance charges.",
+    "p3Unit": "/ month"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "q1": "How much does LoadMatch cost?",
+    "a1": "Publishing requests is free for companies. We charge a commission on the confirmed service price, shown transparently before you accept.",
+    "q2": "Which areas does LoadMatch currently operate in?",
+    "a2": "We currently operate across Metropolitan Lima and Callao. We are gradually expanding to other regions of Peru.",
+    "q3": "How are carriers validated?",
+    "a3": "We verify MTC authorisation, current SOAT insurance, technical inspection and driving licence against official records before a carrier can quote.",
+    "q4": "What happens if there is an incident during the shipment?",
+    "a4": "You can report the incident from the application. Our support team follows up on the case and records it in the carrier's history.",
+    "q5": "What types of cargo can I ship?",
+    "a5": "General packaged goods, palletised loads and dry merchandise. Hazardous, perishable and oversized cargo are not supported yet."
+  },
+  "videos": {
+    "title": "Get to know LoadMatch",
+    "productTitle": "About the product: how LoadMatch works",
+    "productCaption": "About the product — the business model and the main features of the platform.",
+    "teamTitle": "About the team: who builds LoadMatch",
+    "teamCaption": "About the team — the people behind LoadMatch and how we work."
+  },
+  "finalCta": {
+    "title": "Start today with LoadMatch"
   },
   "footer": {
     "product": "Product",
@@ -21,12 +157,5 @@
     "city": "Lima, Peru",
     "hours": "Mon to Fri, 9:00–18:00",
     "sampleContact": "Sample contact details — not a verified support channel."
-  },
-  "nav": {
-    "howItWorks": "How it works",
-    "forCompanies": "For companies",
-    "forCarriers": "For carriers",
-    "pricing": "Pricing",
-    "faq": "FAQ"
   }
 }
