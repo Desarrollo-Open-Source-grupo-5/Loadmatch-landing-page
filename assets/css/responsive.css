@@ -134,6 +134,7 @@
   /* ---- Trust cards stack: all four visible, no carousel ---- */
   .trust-grid { grid-template-columns: 1fr; }
   .vehicles__grid { grid-template-columns: 1fr; }
+  .contact-form__submit { justify-self: stretch; }
 
   /* ---- Audience stack ---- */
   .audience { grid-template-columns: 1fr; }

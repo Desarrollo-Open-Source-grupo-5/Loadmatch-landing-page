@@ -464,6 +464,53 @@
       </div>
     </section>
 
+    <!-- ============================= CONTACT ============================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container container--narrow">
+        <h2 class="section__title" id="contact-title" data-i18n="contact.title">Contact us</h2>
+        <p class="section__lead" data-i18n="contact.lead">Send us your questions and our team will advise you before you start using LoadMatch.</p>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label class="form-field__label" for="contact-name" data-i18n="contact.nameLabel">Full name</label>
+            <input class="form-field__input" type="text" id="contact-name" name="name" placeholder="E.g. Ana Pérez" data-i18n="contact.namePlaceholder" data-i18n-attr="placeholder" autocomplete="name" required
+                   aria-describedby="contact-name-error">
+            <p class="form-field__error" id="contact-name-error" data-i18n="contact.nameError" hidden>Enter your full name.</p>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-email" data-i18n="contact.emailLabel">Email</label>
+            <input class="form-field__input" type="email" id="contact-email" name="email" placeholder="name@company.com" data-i18n="contact.emailPlaceholder" data-i18n-attr="placeholder" autocomplete="email" required
+                   aria-describedby="contact-email-error">
+            <p class="form-field__error" id="contact-email-error" data-i18n="contact.emailError" hidden>Enter a valid email, for example name@company.com.</p>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-profile" data-i18n="contact.profileLabel">I am</label>
+            <select class="form-field__input" id="contact-profile" name="profile" required
+                    aria-describedby="contact-profile-error">
+              <option value="" data-i18n="contact.profilePlaceholder">Select an option</option>
+              <option value="company" data-i18n="contact.profileCompany">A company that needs to ship cargo</option>
+              <option value="carrier" data-i18n="contact.profileCarrier">A carrier</option>
+            </select>
+            <p class="form-field__error" id="contact-profile-error" data-i18n="contact.profileError" hidden>Select whether you are a company or a carrier.</p>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-message" data-i18n="contact.messageLabel">Message</label>
+            <textarea class="form-field__input form-field__input--textarea" id="contact-message" name="message" placeholder="Tell us what you need to ship, from where to where and when." data-i18n="contact.messagePlaceholder" data-i18n-attr="placeholder" rows="5" minlength="10" required
+                      aria-describedby="contact-message-error"></textarea>
+            <p class="form-field__error" id="contact-message-error" data-i18n="contact.messageError" hidden>Write your question in at least 10 characters.</p>
+          </div>
+
+          <button class="btn btn--primary btn--lg contact-form__submit" type="submit" data-i18n="contact.submit">Send question</button>
+
+          <p class="contact-form__success" id="contact-success" role="status" data-i18n="contact.success" hidden>Thank you! Your question was sent. Our team will reply by email within one business day.</p>
+          <p class="contact-form__note" data-i18n="contact.note">Demo form: messages are validated in the browser and are not stored yet.</p>
+        </form>
+      </div>
+    </section>
+
     <!-- ============================== VIDEOS ============================== -->
     <section class="section" id="videos">
       <div class="container">
@@ -542,6 +589,7 @@
           <h2 class="site-footer__heading" data-i18n="footer.contact">Contact</h2>
           <p class="site-footer__note" data-i18n="footer.sampleContact">Sample contact details — not a verified support channel.</p>
           <ul>
+            <li><a href="#contact" data-i18n="footer.contactForm">Contact form</a></li>
             <li><a href="mailto:hola@loadmatch.pe">hola@loadmatch.pe</a></li>
             <li><a href="tel:+5115550123">(01) 555-0123</a></li>
             <li data-i18n="footer.city">Lima, Peru</li>

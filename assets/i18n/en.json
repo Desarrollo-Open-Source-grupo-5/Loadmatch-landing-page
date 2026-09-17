@@ -146,6 +146,27 @@
     "q5": "What types of cargo can I ship?",
     "a5": "General packaged goods, palletised loads and dry merchandise. Hazardous, perishable and oversized cargo are not supported yet."
   },
+  "contact": {
+    "title": "Contact us",
+    "lead": "Send us your questions and our team will advise you before you start using LoadMatch.",
+    "nameLabel": "Full name",
+    "namePlaceholder": "E.g. Ana Pérez",
+    "nameError": "Enter your full name.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "name@company.com",
+    "emailError": "Enter a valid email, for example name@company.com.",
+    "profileLabel": "I am",
+    "profilePlaceholder": "Select an option",
+    "profileCompany": "A company that needs to ship cargo",
+    "profileCarrier": "A carrier",
+    "profileError": "Select whether you are a company or a carrier.",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us what you need to ship, from where to where and when.",
+    "messageError": "Write your question in at least 10 characters.",
+    "submit": "Send question",
+    "success": "Thank you! Your question was sent. Our team will reply by email within one business day.",
+    "note": "Demo form: messages are validated in the browser and are not stored yet."
+  },
   "videos": {
     "title": "Get to know LoadMatch",
     "productTitle": "About the product: how LoadMatch works",
@@ -171,6 +192,7 @@
     "accessibility": "Accessibility",
     "city": "Lima, Peru",
     "hours": "Mon to Fri, 9:00–18:00",
-    "sampleContact": "Sample contact details — not a verified support channel."
+    "sampleContact": "Sample contact details — not a verified support channel.",
+    "contactForm": "Contact form"
   }
 }

@@ -146,6 +146,27 @@
     "q5": "¿Qué tipos de carga puedo transportar?",
     "a5": "Mercadería general envasada, carga paletizada y productos secos. Aún no admitimos carga peligrosa, perecible ni sobredimensionada."
   },
+  "contact": {
+    "title": "Contáctanos",
+    "lead": "Envíanos tus dudas y nuestro equipo te asesorará antes de que empieces a usar LoadMatch.",
+    "nameLabel": "Nombre completo",
+    "namePlaceholder": "Ej. Ana Pérez",
+    "nameError": "Ingresa tu nombre completo.",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "nombre@empresa.com",
+    "emailError": "Ingresa un correo válido, por ejemplo nombre@empresa.com.",
+    "profileLabel": "Soy",
+    "profilePlaceholder": "Selecciona una opción",
+    "profileCompany": "Una empresa que necesita transportar carga",
+    "profileCarrier": "Transportista",
+    "profileError": "Indica si eres empresa o transportista.",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntanos qué necesitas transportar, desde dónde, hacia dónde y cuándo.",
+    "messageError": "Escribe tu consulta con al menos 10 caracteres.",
+    "submit": "Enviar consulta",
+    "success": "¡Gracias! Tu consulta fue enviada. Nuestro equipo te responderá por correo en un día hábil.",
+    "note": "Formulario de demostración: los mensajes se validan en el navegador y aún no se almacenan."
+  },
   "videos": {
     "title": "Conoce LoadMatch",
     "productTitle": "Sobre el producto: cómo funciona LoadMatch",
@@ -171,6 +192,7 @@
     "accessibility": "Accesibilidad",
     "city": "Lima, Perú",
     "hours": "Lun a vie, 9:00–18:00",
-    "sampleContact": "Datos de contacto ilustrativos; no son un canal de soporte verificado."
+    "sampleContact": "Datos de contacto ilustrativos; no son un canal de soporte verificado.",
+    "contactForm": "Formulario de contacto"
   }
 }

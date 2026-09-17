@@ -193,11 +193,70 @@
   }
 
   /* ====================================================================== */
+  /* ======================================================================
+     Contact form (US14)
+     Validates required fields and the email format before "sending".
+     Error texts live in the markup so they follow the active language.
+     ====================================================================== */
+  function initContactForm() {
+    var form = document.getElementById('contact-form');
+    if (!form) { return; }
+
+    var success = document.getElementById('contact-success');
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    var rules = {
+      name: function (value) { return value.trim().length >= 2; },
+      email: function (value) { return emailPattern.test(value.trim()); },
+      profile: function (value) { return value !== ''; },
+      message: function (value) { return value.trim().length >= 10; }
+    };
+
+    function check(field) {
+      var valid = rules[field.name](field.value);
+      var error = document.getElementById(field.getAttribute('aria-describedby'));
+      field.setAttribute('aria-invalid', String(!valid));
+      if (error) { error.hidden = valid; }
+      return valid;
+    }
+
+    Object.keys(rules).forEach(function (name) {
+      var field = form.elements[name];
+      field.addEventListener('blur', function () { check(field); });
+      field.addEventListener('input', function () {
+        if (field.getAttribute('aria-invalid') === 'true') { check(field); }
+      });
+    });
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      success.hidden = true;
+
+      var firstInvalid = null;
+      Object.keys(rules).forEach(function (name) {
+        var field = form.elements[name];
+        if (!check(field) && !firstInvalid) { firstInvalid = field; }
+      });
+
+      if (firstInvalid) {
+        firstInvalid.focus();
+        return;
+      }
+
+      form.reset();
+      Object.keys(rules).forEach(function (name) {
+        form.elements[name].removeAttribute('aria-invalid');
+      });
+      success.hidden = false;
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initAppLinks();
     initMobileNav();
     initTabs();
     initAccordion();
     initCarousel();
+    initContactForm();
   });
 }());
