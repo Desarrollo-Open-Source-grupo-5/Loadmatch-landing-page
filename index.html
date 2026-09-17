@@ -138,6 +138,7 @@
               </figure>
               <h3 class="step__title" data-i18n="how.company1Title">Publish your request</h3>
               <p class="step__desc" data-i18n="how.company1Desc">Enter origin, destination, cargo, date and the vehicle type you need.</p>
+              <a class="btn btn--secondary vehicles__link" href="#vehicles" data-i18n="vehicles.link">View vehicle types</a>
             </li>
             <li class="step">
               <span class="step__num" aria-hidden="true">2</span>
@@ -201,6 +202,41 @@
             </li>
           </ol>
         </div>
+      </div>
+    </section>
+
+    <!-- ========================== VEHICLE CATALOGUE ========================== -->
+    <section class="section section--alt" id="vehicles" aria-labelledby="vehicles-title" aria-describedby="vehicles-note">
+      <div class="container">
+        <h2 class="section__title" id="vehicles-title" data-i18n="vehicles.title">Vehicle types</h2>
+        <p class="section__lead" data-i18n="vehicles.lead">Compare cargo capacities to find an option for your shipment.</p>
+        <ul class="vehicles__grid">
+          <li class="trust-card">
+            <img class="vehicles__image" src="assets/img/cargo-van.jpg" width="554" height="554"
+                 loading="lazy" decoding="async" alt="Cargo van"
+                 data-i18n-attr="alt" data-i18n="vehicles.vanTitle">
+            <h3 class="trust-card__title" data-i18n="vehicles.vanTitle">Cargo van</h3>
+            <p class="vehicles__capacity" data-i18n="vehicles.vanCapacity">Up to 1 tonne</p>
+            <p class="trust-card__desc" data-i18n="vehicles.vanDesc">For parcels, boxes and small urban deliveries.</p>
+          </li>
+          <li class="trust-card">
+            <img class="vehicles__image" src="assets/img/light-truck.jpg" width="800" height="800"
+                 loading="lazy" decoding="async" alt="Light truck"
+                 data-i18n-attr="alt" data-i18n="vehicles.lightTitle">
+            <h3 class="trust-card__title" data-i18n="vehicles.lightTitle">Light truck</h3>
+            <p class="vehicles__capacity" data-i18n="vehicles.lightCapacity">Up to 3 tonnes</p>
+            <p class="trust-card__desc" data-i18n="vehicles.lightDesc">For store replenishment, furniture and medium-sized loads.</p>
+          </li>
+          <li class="trust-card">
+            <img class="vehicles__image" src="assets/img/medium-truck.jpg" width="516" height="387"
+                 loading="lazy" decoding="async" alt="Medium truck"
+                 data-i18n-attr="alt" data-i18n="vehicles.mediumTitle">
+            <h3 class="trust-card__title" data-i18n="vehicles.mediumTitle">Medium truck</h3>
+            <p class="vehicles__capacity" data-i18n="vehicles.mediumCapacity">Up to 5 tonnes</p>
+            <p class="trust-card__desc" data-i18n="vehicles.mediumDesc">For pallets and larger shipments of goods.</p>
+          </li>
+        </ul>
+        <p class="vehicles__note" id="vehicles-note" data-i18n="vehicles.note">Sample data: vehicle types and capacities are illustrative and do not represent a confirmed LoadMatch fleet.</p>
       </div>
     </section>
 

@@ -67,6 +67,21 @@
     "carrier3Desc": "Envía tu propuesta, confirma el servicio y cobra con comprobante, sin intermediarios.",
     "carrier3Alt": "Comprobante de liquidación del servicio completado"
   },
+  "vehicles": {
+    "link": "Ver tipos de vehículos",
+    "title": "Tipos de vehículos",
+    "lead": "Compara las capacidades de carga para encontrar una opción para tu envío.",
+    "vanTitle": "Furgoneta de carga",
+    "vanCapacity": "Hasta 1 tonelada",
+    "vanDesc": "Para paquetes, cajas y pequeñas entregas urbanas.",
+    "lightTitle": "Camión ligero",
+    "lightCapacity": "Hasta 3 toneladas",
+    "lightDesc": "Para abastecer tiendas, transportar muebles y cargas medianas.",
+    "mediumTitle": "Camión mediano",
+    "mediumCapacity": "Hasta 5 toneladas",
+    "mediumDesc": "Para pallets y envíos de mercadería de mayor tamaño.",
+    "note": "Datos de ejemplo: los tipos de vehículos y sus capacidades son ilustrativos y no representan una flota confirmada de LoadMatch."
+  },
   "trust": {
     "title": "Sabes quién transporta tu mercadería",
     "c1Title": "Documentación validada",
