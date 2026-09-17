@@ -66,45 +66,6 @@
     </div>
   </header>
 
-  <!-- ============================= HEADER ============================= -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-
-      <a class="brand" href="#top" aria-label="LoadMatch">
-        <img class="brand__mark" src="assets/img/loadmatch-logo.png" alt="" width="32" height="32">
-        <span class="brand__name">LoadMatch</span>
-      </a>
-
-      <button class="menu-toggle" type="button"
-              aria-expanded="false" aria-controls="primary-nav"
-              data-i18n-attr="aria-label" data-i18n="a11y.openMenu" aria-label="Open navigation menu">
-        <span class="menu-toggle__bar" aria-hidden="true"></span>
-        <span class="menu-toggle__bar" aria-hidden="true"></span>
-        <span class="menu-toggle__bar" aria-hidden="true"></span>
-      </button>
-
-      <nav class="primary-nav" id="primary-nav" data-i18n-attr="aria-label" data-i18n="a11y.mainNav" aria-label="Main navigation">
-        <ul class="primary-nav__list">
-          <li><a href="#how-it-works" data-i18n="nav.howItWorks">How it works</a></li>
-          <li><a href="#for-companies" data-i18n="nav.forCompanies">For companies</a></li>
-          <li><a href="#for-carriers" data-i18n="nav.forCarriers">For carriers</a></li>
-          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
-        </ul>
-
-        <div class="header-actions">
-          <div class="lang-switch" role="group" data-i18n-attr="aria-label" data-i18n="a11y.langSwitch" aria-label="Select language">
-            <button type="button" class="lang-switch__btn is-active" data-lang="en" aria-pressed="true">EN</button>
-            <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="false">ES</button>
-          </div>
-          <a class="btn btn--secondary" href="#" data-app-path="/login" data-app-fallback="#final-cta" data-i18n="cta.signIn">Sign in</a>
-          <a class="btn btn--primary" href="#" data-app-path="/signup?profile=company" data-app-fallback="#for-companies" data-i18n="cta.shipCargo">I need to ship cargo</a>
-        </div>
-      </nav>
-
-    </div>
-  </header>
-
   <!-- HERO        → feature/hero-section -->
 
   <main id="main-content">
@@ -127,7 +88,6 @@
       </div>
     </section>
 
-    <!-- Sections are added by their own feature branches -->
     <!-- ============================= METRICS ============================= -->
     <section class="metrics" data-i18n-attr="aria-label" data-i18n="metrics.sectionLabel" aria-label="Market indicators">
       <div class="container metrics__grid">
@@ -152,9 +112,515 @@
       </div>
     </section>
 
+    <!-- ========================== HOW IT WORKS ========================== -->
+    <section class="section" id="how-it-works">
+      <div class="container container--wide">
+        <h2 class="section__title" data-i18n="how.title">How it works</h2>
+
+        <div class="tabs" role="tablist" data-i18n-attr="aria-label" data-i18n="how.tablistLabel" aria-label="Select your profile">
+          <button class="tabs__tab is-active" role="tab" id="tab-companies"
+                  aria-selected="true" aria-controls="panel-companies"
+                  data-i18n="how.tabCompanies">For companies</button>
+          <button class="tabs__tab" role="tab" id="tab-carriers"
+                  aria-selected="false" aria-controls="panel-carriers" tabindex="-1"
+                  data-i18n="how.tabCarriers">For carriers</button>
+        </div>
+
+        <div class="steps" role="tabpanel" id="panel-companies" aria-labelledby="tab-companies" tabindex="0">
+          <ol class="steps__list">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-request-form.png" width="540" height="360" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.company1Alt"
+                     alt="Cargo request form in the LoadMatch application">
+              </figure>
+              <h3 class="step__title" data-i18n="how.company1Title">Publish your request</h3>
+              <p class="step__desc" data-i18n="how.company1Desc">Enter origin, destination, cargo, date and the vehicle type you need.</p>
+              <a class="btn btn--secondary vehicles__link" href="#vehicles" data-i18n="vehicles.link">View vehicle types</a>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-carrier-list.png" width="540" height="360" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.company2Alt"
+                     alt="List of carriers with ratings and quoted prices">
+              </figure>
+              <h3 class="step__title" data-i18n="how.company2Title">Compare carriers</h3>
+              <p class="step__desc" data-i18n="how.company2Desc">Review compatible carriers and their validated documentation.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-route-map.png" width="820" height="547"
+                     data-i18n-attr="alt" data-i18n="how.company3Alt"
+                     alt="Map tracking the vehicle on its way to the destination">
+              </figure>
+              <h3 class="step__title" data-i18n="how.company3Title">Confirm and track</h3>
+              <p class="step__desc" data-i18n="how.company3Desc">Confirm the service and follow the shipment status until delivery.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="steps" role="tabpanel" id="panel-carriers" aria-labelledby="tab-carriers" tabindex="0" hidden>
+          <ol class="steps__list">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-document-upload.png" width="1110" height="740" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.carrier1Alt"
+                     alt="Carrier document validation screen">
+              </figure>
+              <h3 class="step__title" data-i18n="how.carrier1Title">Create your profile and validate your documents</h3>
+              <p class="step__desc" data-i18n="how.carrier1Desc">Upload your MTC authorisation, SOAT insurance and technical inspection. We validate within 24 hours.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-request-inbox.png" width="1098" height="732" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.carrier2Alt"
+                     alt="Inbox of cargo requests compatible with the vehicle">
+              </figure>
+              <h3 class="step__title" data-i18n="how.carrier2Title">Receive requests that match your vehicle</h3>
+              <p class="step__desc" data-i18n="how.carrier2Desc">You only see loads that match your vehicle type and your operating area.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
+              <figure class="step__media">
+                <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+                <img src="assets/img/app-payment-receipt.png" width="1084" height="723" loading="lazy" decoding="async"
+                     data-i18n-attr="alt" data-i18n="how.carrier3Alt"
+                     alt="Settlement receipt for a completed service">
+              </figure>
+              <h3 class="step__title" data-i18n="how.carrier3Title">Quote, deliver and get paid</h3>
+              <p class="step__desc" data-i18n="how.carrier3Desc">Send your quote, confirm the service and get paid with a receipt, with no hidden middlemen.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== VEHICLE CATALOGUE ========================== -->
+    <section class="section section--alt" id="vehicles" aria-labelledby="vehicles-title" aria-describedby="vehicles-note">
+      <div class="container">
+        <h2 class="section__title" id="vehicles-title" data-i18n="vehicles.title">Vehicle types</h2>
+        <p class="section__lead" data-i18n="vehicles.lead">Compare cargo capacities to find an option for your shipment.</p>
+        <ul class="vehicles__grid">
+          <li class="trust-card">
+            <img class="vehicles__image" src="assets/img/cargo-van.jpg" width="554" height="554"
+                 loading="lazy" decoding="async" alt="Cargo van"
+                 data-i18n-attr="alt" data-i18n="vehicles.vanTitle">
+            <h3 class="trust-card__title" data-i18n="vehicles.vanTitle">Cargo van</h3>
+            <p class="vehicles__capacity" data-i18n="vehicles.vanCapacity">Up to 1 tonne</p>
+            <p class="trust-card__desc" data-i18n="vehicles.vanDesc">For parcels, boxes and small urban deliveries.</p>
+          </li>
+          <li class="trust-card">
+            <img class="vehicles__image" src="assets/img/light-truck.jpg" width="800" height="800"
+                 loading="lazy" decoding="async" alt="Light truck"
+                 data-i18n-attr="alt" data-i18n="vehicles.lightTitle">
+            <h3 class="trust-card__title" data-i18n="vehicles.lightTitle">Light truck</h3>
+            <p class="vehicles__capacity" data-i18n="vehicles.lightCapacity">Up to 3 tonnes</p>
+            <p class="trust-card__desc" data-i18n="vehicles.lightDesc">For store replenishment, furniture and medium-sized loads.</p>
+          </li>
+          <li class="trust-card">
+            <img class="vehicles__image" src="assets/img/medium-truck.jpg" width="516" height="387"
+                 loading="lazy" decoding="async" alt="Medium truck"
+                 data-i18n-attr="alt" data-i18n="vehicles.mediumTitle">
+            <h3 class="trust-card__title" data-i18n="vehicles.mediumTitle">Medium truck</h3>
+            <p class="vehicles__capacity" data-i18n="vehicles.mediumCapacity">Up to 5 tonnes</p>
+            <p class="trust-card__desc" data-i18n="vehicles.mediumDesc">For pallets and larger shipments of goods.</p>
+          </li>
+        </ul>
+        <p class="vehicles__note" id="vehicles-note" data-i18n="vehicles.note">Sample data: vehicle types and capacities are illustrative and do not represent a confirmed LoadMatch fleet.</p>
+      </div>
+    </section>
+
+    <!-- ============================== TRUST ============================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title" data-i18n="trust.title">You know exactly who is moving your goods</h2>
+        <ul class="trust-grid">
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c1Title">Validated documentation</h3>
+            <p class="trust-card__desc" data-i18n="trust.c1Desc">We verify MTC authorisation, SOAT insurance and technical inspection.</p>
+          </li>
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="8" r="3.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M4.5 20a7.5 7.5 0 0 1 15 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c2Title">Driver and vehicle profile</h3>
+            <p class="trust-card__desc" data-i18n="trust.c2Desc">Name, photo, licence plate and vehicle type before you accept.</p>
+          </li>
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c3Title">Service and incident history</h3>
+            <p class="trust-card__desc" data-i18n="trust.c3Desc">Review the carrier's previous deliveries.</p>
+          </li>
+          <li class="trust-card">
+            <svg class="trust-card__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.7l5.9-.9L12 3.5Z"
+                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="trust-card__title" data-i18n="trust.c4Title">Ratings from other companies</h3>
+            <p class="trust-card__desc" data-i18n="trust.c4Desc">Verified reviews from companies that already hired them.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========================== AUDIENCE SPLIT ========================== -->
+    <section class="section">
+      <div class="container audience">
+
+        <article class="audience-card" id="for-companies">
+          <h2 class="audience-card__title" data-i18n="audience.companiesTitle">For your company</h2>
+          <ul class="audience-card__list">
+            <li data-i18n="audience.companies1">Publish in 3 steps, without owning a fleet</li>
+            <li data-i18n="audience.companies2">Compare options and prices in one place</li>
+            <li data-i18n="audience.companies3">Real-time traceability of your shipment</li>
+            <li data-i18n="audience.companies4">History and receipts for your accounting</li>
+          </ul>
+          <a class="btn btn--primary" href="#" data-app-path="/signup?profile=company" data-app-fallback="#for-companies" data-i18n="cta.shipCargo">I need to ship cargo</a>
+        </article>
+
+        <article class="audience-card" id="for-carriers">
+          <h2 class="audience-card__title" data-i18n="audience.carriersTitle">For carriers</h2>
+          <ul class="audience-card__list">
+            <li data-i18n="audience.carriers1">Receive requests that match your vehicle</li>
+            <li data-i18n="audience.carriers2">Cut down the time your vehicle sits idle</li>
+            <li data-i18n="audience.carriers3">Build reputation through ratings</li>
+            <li data-i18n="audience.carriers4">Get paid with a receipt and no hidden middlemen</li>
+          </ul>
+          <a class="btn btn--secondary" href="#" data-app-path="/signup?profile=carrier" data-app-fallback="#for-carriers" data-i18n="cta.imCarrier">I am a carrier</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================== TESTIMONIALS =========================== -->
+    <section class="section section--alt" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <p class="eyebrow" data-i18n="testimonials.eyebrow">Sample content</p>
+        <h2 id="testimonials-title" class="section__title section__title--left" data-i18n="testimonials.title">What our users say</h2>
+
+        <div class="carousel" tabindex="0" role="group"
+             data-i18n-attr="aria-roledescription" data-i18n="a11y.carousel" aria-roledescription="carousel"
+             aria-label="User testimonials">
+          <ul class="carousel__track">
+            <li class="testimonial" role="group" aria-roledescription="slide" aria-label="1 / 3">
+              <blockquote class="testimonial__quote" data-i18n="testimonials.q1">&laquo;It used to take me two days to find a truck; now I get quotes the same day.&raquo;</blockquote>
+              <footer class="testimonial__author">
+                <span class="avatar" aria-hidden="true">RM</span>
+                <span>
+                  <strong class="testimonial__name">Rosa Meléndez</strong>
+                  <span class="testimonial__role" data-i18n="testimonials.r1">Warehouse Manager · Distribuidora San Marcos S.A.C.</span>
+                </span>
+              </footer>
+            </li>
+            <li class="testimonial" role="group" aria-roledescription="slide" aria-label="2 / 3">
+              <blockquote class="testimonial__quote" data-i18n="testimonials.q2">&laquo;My truck no longer sits idle on weekends; there are always requests from Ate to Lurín.&raquo;</blockquote>
+              <footer class="testimonial__author">
+                <span class="avatar" aria-hidden="true">JV</span>
+                <span>
+                  <strong class="testimonial__name">Jorge Vílchez</strong>
+                  <span class="testimonial__role" data-i18n="testimonials.r2">Independent carrier · Villa El Salvador</span>
+                </span>
+              </footer>
+            </li>
+            <li class="testimonial" role="group" aria-roledescription="slide" aria-label="3 / 3">
+              <blockquote class="testimonial__quote" data-i18n="testimonials.q3">&laquo;Being able to see the carrier's documents beforehand gives me peace of mind when shipping expensive goods.&raquo;</blockquote>
+              <footer class="testimonial__author">
+                <span class="avatar" aria-hidden="true">CT</span>
+                <span>
+                  <strong class="testimonial__name">Carla Torres</strong>
+                  <span class="testimonial__role" data-i18n="testimonials.r3">Administrator · Comercial Andina E.I.R.L.</span>
+                </span>
+              </footer>
+            </li>
+          </ul>
+        </div>
+
+        <div class="carousel-nav" hidden>
+          <div class="carousel-nav__dots">
+            <button type="button" class="dot is-active" data-slide="0" data-i18n-attr="aria-label" data-i18n="a11y.goToSlide1" aria-label="Go to testimonial 1"><span aria-hidden="true"></span></button>
+            <button type="button" class="dot" data-slide="1" data-i18n-attr="aria-label" data-i18n="a11y.goToSlide2" aria-label="Go to testimonial 2"><span aria-hidden="true"></span></button>
+            <button type="button" class="dot" data-slide="2" data-i18n-attr="aria-label" data-i18n="a11y.goToSlide3" aria-label="Go to testimonial 3"><span aria-hidden="true"></span></button>
+          </div>
+          <p class="carousel-nav__counter" aria-live="polite"><span data-carousel-counter>1 / 3</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PRICING ============================= -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <p class="eyebrow eyebrow--center" data-i18n="pricing.eyebrow">Sample content</p>
+        <h2 class="section__title" data-i18n="pricing.title">Transparent pricing</h2>
+        <p class="section__lead" data-i18n="pricing.lead">No fine print, no surprises. A simple and direct model.</p>
+
+        <ul class="pricing-grid">
+          <li class="price-card">
+            <span class="price-card__label" data-i18n="pricing.p1Label">Companies</span>
+            <h3 class="price-card__title" data-i18n="pricing.p1Title">Publish cargo: free</h3>
+            <p class="price-card__desc" data-i18n="pricing.p1Desc">Publish all your requests at no cost and with no upfront commission.</p>
+            <p class="price-card__amount"><strong>S/&nbsp;0</strong> <span data-i18n="pricing.p1Unit">/ request</span></p>
+          </li>
+          <li class="price-card price-card--featured">
+            <span class="price-card__label" data-i18n="pricing.p2Label">Per trip</span>
+            <span class="badge" data-i18n="pricing.p2Badge">Most used</span>
+            <h3 class="price-card__title" data-i18n="pricing.p2Title">Commission on confirmed service</h3>
+            <p class="price-card__desc" data-i18n="pricing.p2Desc">You only pay a small transparent percentage once the trip is completed.</p>
+            <p class="price-card__amount"><span data-i18n="pricing.p2Unit">Rate shown before you accept</span></p>
+          </li>
+          <li class="price-card">
+            <span class="price-card__label" data-i18n="pricing.p3Label">No lock-in</span>
+            <h3 class="price-card__title" data-i18n="pricing.p3Title">No membership fee</h3>
+            <p class="price-card__desc" data-i18n="pricing.p3Desc">No fixed monthly fees and no hidden account maintenance charges.</p>
+            <p class="price-card__amount"><strong>S/&nbsp;0</strong> <span data-i18n="pricing.p3Unit">/ month</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =============================== FAQ =============================== -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <h2 class="section__title" data-i18n="faq.title">Frequently asked questions</h2>
+
+        <div class="accordion">
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="true" aria-controls="faq-1" id="faq-1-btn">
+                <span data-i18n="faq.q1">How much does LoadMatch cost?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn">
+              <p data-i18n="faq.a1">Publishing requests is free for companies. We charge a commission on the confirmed service price, shown transparently before you accept.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">
+                <span data-i18n="faq.q2">Which areas does LoadMatch currently operate in?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn" hidden>
+              <p data-i18n="faq.a2">We currently operate across Metropolitan Lima and Callao. We are gradually expanding to other regions of Peru.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">
+                <span data-i18n="faq.q3">How are carriers validated?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn" hidden>
+              <p data-i18n="faq.a3">We verify MTC authorisation, current SOAT insurance, technical inspection and driving licence against official records before a carrier can quote.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">
+                <span data-i18n="faq.q4">What happens if there is an incident during the shipment?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn" hidden>
+              <p data-i18n="faq.a4">You can report the incident from the application. Our support team follows up on the case and records it in the carrier's history.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">
+                <span data-i18n="faq.q5">What types of cargo can I ship?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn" hidden>
+              <p data-i18n="faq.a5">General packaged goods, palletised loads and dry merchandise. Hazardous, perishable and oversized cargo are not supported yet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT ============================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container container--narrow">
+        <h2 class="section__title" id="contact-title" data-i18n="contact.title">Contact us</h2>
+        <p class="section__lead" data-i18n="contact.lead">Send us your questions and our team will advise you before you start using LoadMatch.</p>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label class="form-field__label" for="contact-name" data-i18n="contact.nameLabel">Full name</label>
+            <input class="form-field__input" type="text" id="contact-name" name="name" placeholder="E.g. Ana Pérez" data-i18n="contact.namePlaceholder" data-i18n-attr="placeholder" autocomplete="name" required
+                   aria-describedby="contact-name-error">
+            <p class="form-field__error" id="contact-name-error" data-i18n="contact.nameError" hidden>Enter your full name.</p>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-email" data-i18n="contact.emailLabel">Email</label>
+            <input class="form-field__input" type="email" id="contact-email" name="email" placeholder="name@company.com" data-i18n="contact.emailPlaceholder" data-i18n-attr="placeholder" autocomplete="email" required
+                   aria-describedby="contact-email-error">
+            <p class="form-field__error" id="contact-email-error" data-i18n="contact.emailError" hidden>Enter a valid email, for example name@company.com.</p>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-profile" data-i18n="contact.profileLabel">I am</label>
+            <select class="form-field__input" id="contact-profile" name="profile" required
+                    aria-describedby="contact-profile-error">
+              <option value="" data-i18n="contact.profilePlaceholder">Select an option</option>
+              <option value="company" data-i18n="contact.profileCompany">A company that needs to ship cargo</option>
+              <option value="carrier" data-i18n="contact.profileCarrier">A carrier</option>
+            </select>
+            <p class="form-field__error" id="contact-profile-error" data-i18n="contact.profileError" hidden>Select whether you are a company or a carrier.</p>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="contact-message" data-i18n="contact.messageLabel">Message</label>
+            <textarea class="form-field__input form-field__input--textarea" id="contact-message" name="message" placeholder="Tell us what you need to ship, from where to where and when." data-i18n="contact.messagePlaceholder" data-i18n-attr="placeholder" rows="5" minlength="10" required
+                      aria-describedby="contact-message-error"></textarea>
+            <p class="form-field__error" id="contact-message-error" data-i18n="contact.messageError" hidden>Write your question in at least 10 characters.</p>
+          </div>
+
+          <button class="btn btn--primary btn--lg contact-form__submit" type="submit" data-i18n="contact.submit">Send question</button>
+
+          <p class="contact-form__success" id="contact-success" role="status" data-i18n="contact.success" hidden>Thank you! Your question was sent. Our team will reply by email within one business day.</p>
+          <p class="contact-form__note" data-i18n="contact.note">Demo form: messages are validated in the browser and are not stored yet.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================== VIDEOS ============================== -->
+    <section class="section" id="videos">
+      <div class="container">
+        <h2 class="section__title" data-i18n="videos.title">Get to know LoadMatch</h2>
+        <div class="video-grid">
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <div class="video-card__placeholder" role="img" aria-labelledby="video-product-soon">
+                <svg class="video-card__icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+                  <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <path d="M24 14v10l7 4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <p class="video-card__soon" id="video-product-soon" data-i18n="videos.comingSoon">Video coming soon</p>
+              </div>
+              <!-- Replace the placeholder above with this iframe once the video is on YouTube:
+              <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                      data-i18n-attr="title" data-i18n="videos.productTitle"
+                      loading="lazy" allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
+            </div>
+            <figcaption class="video-card__caption" data-i18n="videos.productCaption">About the product — the business model and the main features of the platform.</figcaption>
+          </figure>
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <div class="video-card__placeholder" role="img" aria-labelledby="video-team-soon">
+                <svg class="video-card__icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+                  <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <path d="M24 14v10l7 4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <p class="video-card__soon" id="video-team-soon" data-i18n="videos.comingSoon">Video coming soon</p>
+              </div>
+              <!-- Replace the placeholder above with this iframe once the video is on YouTube:
+              <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                      data-i18n-attr="title" data-i18n="videos.teamTitle"
+                      loading="lazy" allowfullscreen
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
+            </div>
+            <figcaption class="video-card__caption" data-i18n="videos.teamCaption">About the team — the people behind LoadMatch and how we work.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ FINAL CTA ============================ -->
+    <section class="final-cta" id="final-cta">
+      <div class="container final-cta__inner">
+        <h2 class="final-cta__title" data-i18n="finalCta.title">Start today with LoadMatch</h2>
+        <div class="final-cta__actions">
+          <a class="btn btn--secondary btn--lg" href="#" data-app-path="/signup?profile=carrier" data-app-fallback="#for-carriers" data-i18n="cta.imCarrier">I am a carrier</a>
+          <a class="btn btn--primary btn--lg" href="#" data-app-path="/signup?profile=company" data-app-fallback="#for-companies" data-i18n="cta.shipCargo">I need to ship cargo</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- FOOTER      → feature/site-footer -->
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading" data-i18n="footer.product">Product</h2>
+          <ul>
+            <li><a href="#how-it-works" data-i18n="nav.howItWorks">How it works</a></li>
+            <li><a href="#for-companies" data-i18n="nav.forCompanies">For companies</a></li>
+            <li><a href="#for-carriers" data-i18n="nav.forCarriers">For carriers</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading" data-i18n="footer.company">Company</h2>
+          <ul>
+            <li><a href="#top" data-i18n="footer.about">About CargoLink Labs</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading" data-i18n="footer.legal">Legal</h2>
+          <ul>
+            <li><a href="docs/terms-and-conditions.html" data-i18n="footer.terms">Terms and conditions</a></li>
+            <li><a href="docs/terms-and-conditions.html#privacy" data-i18n="footer.privacy">Privacy policy</a></li>
+            <li><a href="docs/terms-and-conditions.html#cookies" data-i18n="footer.cookies">Cookie policy</a></li>
+            <li><a href="docs/terms-and-conditions.html#accessibility" data-i18n="footer.accessibility">Accessibility</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading" data-i18n="footer.contact">Contact</h2>
+          <p class="site-footer__note" data-i18n="footer.sampleContact">Sample contact details — not a verified support channel.</p>
+          <ul>
+            <li><a href="#contact" data-i18n="footer.contactForm">Contact form</a></li>
+            <li><a href="mailto:hola@loadmatch.pe">hola@loadmatch.pe</a></li>
+            <li><a href="tel:+5115550123">(01) 555-0123</a></li>
+            <li data-i18n="footer.city">Lima, Peru</li>
+            <li data-i18n="footer.hours">Mon to Fri, 9:00–18:00</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+        <img class="site-footer__mark" src="assets/img/loadmatch-logo.png" alt="" width="28" height="28">
+        <p class="site-footer__legal">CargoLink Labs &copy; 2026</p>
+      </div>
+    </div>
+  </footer>
+
+
 
   <script src="assets/js/config.js"></script>
   <script src="assets/js/i18n.js"></script>
